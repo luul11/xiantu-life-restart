@@ -1,0 +1,105 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory
+coverage
+*.lcov
+.nyc_output
+
+# Test files
+*.spec.js
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional caches
+.npm
+.eslintcache
+.cache
+
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+
+# Build output
+dist
+template/public/
+
+# ====================
+# 过程文档和调试文件
+# ====================
+debug-*.md
+debug-blankbox-height-recursion.md
+
+# 设计说明文档
+游戏设计说明文档.md
+
+# ====================
+# 老版本文件
+# ====================
+template/修仙人生模拟器V1.0.zip
+README-zh_CN.md
+
+# ====================
+# 设计稿
+# ====================
+design/
+
+# ====================
+# Laya IDE 工程文件（非运行必需）
+# ====================
+laya/
+lifeRestart.laya
+
+# ====================
+# IDE配置
+# ====================
+.vscode/
+.idea/
+.dbg/
+
+# ====================
+# 其他
+# ====================
+__localStorage.json
+Thumbs.db
+.DS_Store
+
+# 原项目致谢数据包含第三方公开资料，不随修仙版发布
+data/specialthanks-afd.xlsx
+data/specialthanks-dun.xlsx
+public/data/specialthanks.json
+
+# ====================
+# 旧版命令行版本
+# ====================
+repl/
+
+# ====================
+# 开发辅助脚本
+# ====================
+scripts/

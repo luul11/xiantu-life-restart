@@ -1,0 +1,4025 @@
+{
+    "2001": {
+        "id": 2001,
+        "category": "历练",
+        "event": "你探索一处秘境，机关重重，险死还生。",
+        "weight": 10,
+        "grade": 2,
+        "effect": {
+            "HP": -15,
+            "STONE": 30,
+            "CULT": 12
+        }
+    },
+    "2002": {
+        "id": 2002,
+        "category": "战斗",
+        "event": "宗门大比开始，你登台迎战对手。",
+        "weight": 8,
+        "grade": 2,
+        "battle": {
+            "name": "大比对手",
+            "hp": 150,
+            "atk": 14,
+            "elem": "NONE",
+            "human": true,
+            "win": 2102,
+            "lose": 2201
+        }
+    },
+    "2003": {
+        "id": 2003,
+        "category": "战斗",
+        "event": "妖王率众来袭，你挺身而出迎战！",
+        "weight": 5,
+        "grade": 3,
+        "battle": {
+            "name": "妖王",
+            "hp": 300,
+            "atk": 20,
+            "elem": "HUO",
+            "res": {
+                "HUO": 5
+            },
+            "win": 2103,
+            "lose": 2202
+        }
+    },
+    "2004": {
+        "id": 2004,
+        "category": "闭关",
+        "event": "你闭关凝练真元，灵力愈发精纯。",
+        "weight": 10,
+        "grade": 0,
+        "effect": {
+            "CULT": 30
+        }
+    },
+    "2005": {
+        "id": 2005,
+        "category": "事务",
+        "event": "坊市拍卖行出现一枚结金丹，各路筑基修士疯狂竞价，拍出了 3000 灵石的天价！",
+        "weight": 5,
+        "grade": 3,
+        "include": "STONE>=3000 & STAGE>=8",
+        "effect": {
+            "STONE": -3000,
+            "PILL3": 1
+        }
+    },
+    "2006": {
+        "id": 2006,
+        "category": "历练",
+        "event": "你发现古修士洞府，五行灵气灌顶！",
+        "weight": 3,
+        "grade": 4,
+        "once": 1,
+        "effect": {
+            "JIN": 1,
+            "MU": 1,
+            "SHUI": 1,
+            "HUO": 1,
+            "TU": 1,
+            "CULT": 20
+        }
+    },
+    "2007": {
+        "id": 2007,
+        "category": "事务",
+        "event": "你在坊市经营摊位，赚得盆满钵满。",
+        "weight": 8,
+        "grade": 0,
+        "effect": {
+            "STONE": 20,
+            "MOOD": -5
+        }
+    },
+    "2008": {
+        "id": 2008,
+        "category": "事务",
+        "event": "你重金购得一尊【上古丹炉】。",
+        "weight": 4,
+        "grade": 3,
+        "once": 1,
+        "include": "STONE>=100",
+        "effect": {
+            "STONE": -100,
+            "ART": 5006
+        }
+    },
+    "2009": {
+        "id": 2009,
+        "category": "历练",
+        "event": "你误入魔窟，虽逃出升天，却被一尊【残破魔像】缠上了。",
+        "weight": 2,
+        "grade": 1,
+        "once": 1,
+        "effect": {
+            "ART": 5004
+        }
+    },
+    "2010": {
+        "id": 2010,
+        "category": "事务",
+        "event": "心境不佳，你在酒楼畅饮灵酒，一扫烦闷。",
+        "weight": 15,
+        "grade": 0,
+        "include": "MOOD<50 & STONE>=30",
+        "effect": {
+            "STONE": -30,
+            "MOOD": 15
+        }
+    },
+    "2011": {
+        "id": 2011,
+        "category": "历练",
+        "event": "心中烦闷，你云游散心，偶遇机缘。",
+        "weight": 15,
+        "grade": 1,
+        "include": "MOOD<50",
+        "effect": {
+            "MOOD": 10,
+            "CULT": 15
+        }
+    },
+    "2012": {
+        "id": 2012,
+        "category": "闭关",
+        "event": "你灵石充裕、道心稳固，正是闭关烧钱修炼的好时机。",
+        "weight": 8,
+        "grade": 1,
+        "include": "STONE>=10 & MOOD>=60",
+        "choice": {
+            "prompt": "是否闭关一年？（消耗50%灵石转化为修为）",
+            "options": [
+                {
+                    "label": "闭关",
+                    "next": 2013
+                },
+                {
+                    "label": "作罢"
+                }
+            ]
+        }
+    },
+    "2013": {
+        "id": 2013,
+        "category": "闭关",
+        "event": "你闭死关一年，灵石化作滚滚修为。",
+        "NoRandom": 1,
+        "grade": 2,
+        "dynamic": "seclusion"
+    },
+    "2014": {
+        "id": 2014,
+        "category": "事务",
+        "event": "你在坊市购得一张传送符（副本重伤时可保命退出）。",
+        "weight": 5,
+        "grade": 1,
+        "include": "STONE>=20 & TELE<3",
+        "effect": {
+            "STONE": -20,
+            "TELE": 1
+        }
+    },
+    "2015": {
+        "id": 2015,
+        "category": "事务",
+        "event": "师门任务：押送一批灵材往返万里，一路平安。",
+        "weight": 10,
+        "grade": 0,
+        "effect": {
+            "STONE": 5,
+            "CULT": 3
+        }
+    },
+    "2016": {
+        "id": 2016,
+        "category": "战斗",
+        "event": "昔日结怨的仇家寻上门来，扬言要取你性命！",
+        "weight": 5,
+        "grade": 2,
+        "battle": {
+            "name": "仇家修士",
+            "hp": 400,
+            "atk": 22,
+            "elem": "JIN",
+            "human": true,
+            "res": {
+                "JIN": 3
+            },
+            "win": 2203,
+            "lose": 2204
+        }
+    },
+    "2017": {
+        "id": 2017,
+        "category": "事务",
+        "event": "你带队巡逻坊市一年，震慑宵小，名望渐起。",
+        "weight": 8,
+        "grade": 0,
+        "effect": {
+            "MHP": 8,
+            "STONE": 5
+        }
+    },
+    "2018": {
+        "id": 2018,
+        "category": "事务",
+        "event": "你主理炼丹房一年，丹道与灵力皆有进益。",
+        "weight": 8,
+        "grade": 1,
+        "effect": {
+            "CULT": 5,
+            "MMP": 8
+        }
+    },
+    "2019": {
+        "id": 2019,
+        "category": "事务",
+        "event": "一位散修请你护法闭关，事后奉上谢仪。",
+        "weight": 8,
+        "grade": 0,
+        "effect": {
+            "STONE": 10
+        }
+    },
+    "2020": {
+        "id": 2020,
+        "category": "历练",
+        "event": "奇遇：你从一卷前辈遗留的残卷中悟得修炼精要。",
+        "weight": 4,
+        "grade": 2,
+        "once": 1,
+        "effect": {
+            "CULT": 10
+        }
+    },
+    "2021": {
+        "id": 2021,
+        "category": "闭关",
+        "event": "你闭关静养一年，休养生息。",
+        "weight": 6,
+        "grade": 0,
+        "effect": {
+            "HP": 25,
+            "MP": 25,
+            "MOOD": 5
+        }
+    },
+    "2022": {
+        "id": 2022,
+        "category": "历练",
+        "event": "你受邀参加论道大会，与众修士坐而论道，获益匪浅。",
+        "weight": 8,
+        "grade": 1,
+        "effect": {
+            "CULT": 5,
+            "MOOD": 3
+        }
+    },
+    "2023": {
+        "id": 2023,
+        "category": "历练",
+        "event": "你路见不平，救下一名被追杀的散修，对方赠礼答谢。",
+        "weight": 6,
+        "grade": 1,
+        "effect": {
+            "STONE": 5,
+            "MOOD": 3
+        }
+    },
+    "2024": {
+        "id": 2024,
+        "category": "事务",
+        "event": "你收了两名记名弟子，教导晚辈让你心境平和。",
+        "weight": 5,
+        "grade": 0,
+        "effect": {
+            "MOOD": 5
+        }
+    },
+    "2025": {
+        "id": 2025,
+        "category": "战斗",
+        "event": "宗门颁下斩妖令：黑水泽恶蛟作乱，你奉命前往讨伐！",
+        "weight": 5,
+        "grade": 3,
+        "battle": {
+            "name": "黑水恶蛟",
+            "hp": 500,
+            "atk": 26,
+            "elem": "SHUI",
+            "res": {
+                "SHUI": 5
+            },
+            "win": 2300,
+            "lose": 2301
+        }
+    },
+    "2026": {
+        "id": 2026,
+        "category": "事务",
+        "event": "你将历年积攒的妖丹托拍卖行寄售，小赚一笔。",
+        "weight": 8,
+        "grade": 0,
+        "effect": {
+            "STONE": 15
+        }
+    },
+    "2027": {
+        "id": 2027,
+        "category": "历练",
+        "event": "你发现一处温泉洞府，疗养一年，旧伤尽去。",
+        "weight": 6,
+        "grade": 1,
+        "effect": {
+            "HP": 20,
+            "MOOD": 4
+        }
+    },
+    "2028": {
+        "id": 2028,
+        "category": "事务",
+        "event": "你开炉炼丹，丹成九转，自留一枚固本培元。",
+        "weight": 7,
+        "grade": 1,
+        "effect": {
+            "CULT": 8
+        }
+    },
+    "2029": {
+        "id": 2029,
+        "category": "突破",
+        "event": "你强行冲关，真元逆乱，走火入魔！",
+        "weight": 10,
+        "grade": 0,
+        "include": "STAGE>=6 & MOOD<35",
+        "effect": {
+            "HP": -25,
+            "CULT": -10
+        }
+    },
+    "2030": {
+        "id": 2030,
+        "category": "战斗",
+        "event": "突破在即，心魔化作你的模样拦在识海之中！",
+        "weight": 8,
+        "grade": 2,
+        "include": "STAGE>=8",
+        "battle": {
+            "name": "心魔",
+            "hp": 450,
+            "atk": 20,
+            "elem": "NONE",
+            "win": 2302,
+            "lose": 2303
+        }
+    },
+    "2031": {
+        "id": 2031,
+        "category": "历练",
+        "event": "坊市偶遇练气时的旧友，把臂同游，畅谈三日。",
+        "weight": 6,
+        "grade": 1,
+        "effect": {
+            "MOOD": 5
+        }
+    },
+    "2032": {
+        "id": 2032,
+        "category": "事务",
+        "event": "你受托镇守灵矿一年，矿脉深处的灵气滋养了你。",
+        "weight": 7,
+        "grade": 0,
+        "effect": {
+            "STONE": 12,
+            "HP": -5
+        }
+    },
+    "2033": {
+        "id": 2033,
+        "category": "战斗",
+        "event": "魔道细作夜袭你的洞府！",
+        "weight": 4,
+        "grade": 2,
+        "battle": {
+            "name": "魔道细作",
+            "hp": 380,
+            "atk": 21,
+            "elem": "MU",
+            "human": true,
+            "win": 2304,
+            "lose": 2305
+        }
+    },
+    "2034": {
+        "id": 2034,
+        "category": "历练",
+        "event": "你听闻海外仙山的传闻，出海寻宝一年，风浪中亦有收获。",
+        "weight": 5,
+        "grade": 2,
+        "effect": {
+            "HP": -10,
+            "STONE": 30
+        }
+    },
+    "2035": {
+        "id": 2035,
+        "category": "历练",
+        "event": "你修复一册古籍，从中悟得一页残缺的修炼心得。",
+        "weight": 4,
+        "grade": 2,
+        "once": 1,
+        "effect": {
+            "CULT": 8
+        }
+    },
+    "2036": {
+        "id": 2036,
+        "category": "事务",
+        "event": "弟子在外惹祸，你出面赔礼摆平。",
+        "weight": 5,
+        "grade": 0,
+        "include": "STONE>=10",
+        "effect": {
+            "STONE": -10,
+            "MOOD": -3
+        }
+    },
+    "2037": {
+        "id": 2037,
+        "category": "事务",
+        "event": "宗门论功行赏，你因历年功绩获得长老团赏赐。",
+        "weight": 5,
+        "grade": 2,
+        "include": "STAGE>=8",
+        "effect": {
+            "STONE": 20
+        }
+    },
+    "2038": {
+        "id": 2038,
+        "category": "历练",
+        "event": "你代表宗门参加三宗交流会，切磋论道，眼界大开。",
+        "weight": 7,
+        "grade": 1,
+        "effect": {
+            "CULT": 6,
+            "MOOD": 3
+        }
+    },
+    "2039": {
+        "id": 2039,
+        "category": "战斗",
+        "event": "坊市有人摆下赌斗擂台，赌注二十灵石，指名挑战你！",
+        "weight": 5,
+        "grade": 1,
+        "battle": {
+            "name": "赌斗者",
+            "hp": 300,
+            "atk": 18,
+            "elem": "JIN",
+            "human": true,
+            "win": 2306,
+            "lose": 2307
+        }
+    },
+    "2040": {
+        "id": 2040,
+        "category": "闭关",
+        "event": "你参悟癸水咒，水行真元渐成体系。",
+        "weight": 8,
+        "grade": 2,
+        "once": 1,
+        "skill": 3,
+        "include": "STAGE>=2 & SKL!=3",
+        "effect": {
+            "SKL": 3,
+            "CULT": 30,
+            "SHUI": 2
+        }
+    },
+    "2041": {
+        "id": 2041,
+        "category": "历练",
+        "event": "你在地脉裂隙中悟得裂地斩。",
+        "weight": 7,
+        "grade": 3,
+        "once": 1,
+        "skill": 4,
+        "include": "STAGE>=4 & SKL!=4",
+        "effect": {
+            "SKL": 4,
+            "CULT": 40,
+            "TU": 2
+        }
+    },
+    "2042": {
+        "id": 2042,
+        "category": "闭关",
+        "event": "你以灵火淬体，骨骼坚如精铁。",
+        "weight": 8,
+        "grade": 2,
+        "once": 1,
+        "include": "STAGE>=3",
+        "effect": {
+            "MHP": 30,
+            "HP": 30,
+            "STR": 2,
+            "MOOD": 3
+        }
+    },
+    "2043": {
+        "id": 2043,
+        "category": "丹药",
+        "event": "你以筑基真火炼制回气丹，丹成两枚。",
+        "weight": 8,
+        "grade": 2,
+        "once": 1,
+        "include": "STAGE>=2",
+        "effect": {
+            "HQD2": 2,
+            "MMP": 15
+        }
+    },
+    "2044": {
+        "id": 2044,
+        "category": "修炼",
+        "event": "你在五行洞天中淬炼真元，灵根得到全面提升。",
+        "weight": 5,
+        "grade": 3,
+        "once": 1,
+        "include": "STAGE>=6",
+        "effect": {
+            "JIN": 2,
+            "MU": 2,
+            "SHUI": 2,
+            "HUO": 2,
+            "TU": 2,
+            "CULT": 50
+        }
+    },
+    "2045": {
+        "id": 2045,
+        "category": "闭关",
+        "event": "你参悟万木朝宗，木行灵力生生不息。",
+        "weight": 6,
+        "grade": 4,
+        "once": 1,
+        "skill": 5,
+        "include": "STAGE>=7 & SKL!=5",
+        "effect": {
+            "SKL": 5,
+            "CULT": 60,
+            "MU": 3
+        }
+    },
+    "2046": {
+        "id": 2046,
+        "category": "历练",
+        "event": "你于无声剑冢中悟出无名剑诀。",
+        "weight": 4,
+        "grade": 4,
+        "once": 1,
+        "skill": 6,
+        "include": "STAGE>=9 & SKL!=6",
+        "effect": {
+            "SKL": 6,
+            "CULT": 80,
+            "STR": 3
+        }
+    },
+    "2047": {
+        "id": 2047,
+        "category": "事务",
+        "event": "你名下灵田丰收，分得一笔红利。",
+        "weight": 7,
+        "grade": 0,
+        "effect": {
+            "STONE": 10
+        }
+    },
+    "2048": {
+        "id": 2048,
+        "category": "历练",
+        "event": "故友来访，煮茶论道，怡然自得。",
+        "weight": 7,
+        "grade": 0,
+        "effect": {
+            "CULT": 5,
+            "MOOD": 4
+        }
+    },
+    "2049": {
+        "id": 2049,
+        "category": "战斗",
+        "event": "你走镖途经断魂峡，遭遇埋伏！",
+        "weight": 5,
+        "grade": 2,
+        "battle": {
+            "name": "伏兵首领",
+            "hp": 420,
+            "atk": 23,
+            "elem": "HUO",
+            "human": true,
+            "res": {
+                "HUO": 3
+            },
+            "win": 2310,
+            "lose": 2311
+        }
+    },
+    "2050": {
+        "id": 2050,
+        "category": "闭关",
+        "event": "你大梦一场，梦中历经一世轮回，醒来道心通透。",
+        "weight": 2,
+        "grade": 3,
+        "once": 1,
+        "effect": {
+            "CULT": 15,
+            "MOOD": 5
+        }
+    },
+    "2051": {
+        "id": 2051,
+        "category": "事务",
+        "event": "你祭炼本命法器一年，灵力运转如臂使指。",
+        "weight": 5,
+        "grade": 2,
+        "include": "STONE>=15",
+        "effect": {
+            "STONE": -15,
+            "MP": 15,
+            "MMP": 8
+        }
+    },
+    "2052": {
+        "id": 2052,
+        "category": "事务",
+        "event": "你指点几名后辈修行，看着他们的进境颇感欣慰。",
+        "weight": 7,
+        "grade": 0,
+        "effect": {
+            "MOOD": 3
+        }
+    },
+    "2053": {
+        "id": 2053,
+        "category": "战斗",
+        "event": "正道联军围剿魔窟，你随队攻入外围！",
+        "weight": 4,
+        "grade": 3,
+        "battle": {
+            "name": "魔修头目",
+            "hp": 450,
+            "atk": 24,
+            "elem": "SHUI",
+            "human": true,
+            "res": {
+                "SHUI": 4
+            },
+            "win": 2312,
+            "lose": 2313
+        }
+    },
+    "2054": {
+        "id": 2054,
+        "category": "事务",
+        "event": "黑市淘宝，你淘到一枚古玉，内蕴灵机。",
+        "weight": 5,
+        "grade": 1,
+        "include": "STONE>=15",
+        "effect": {
+            "STONE": -15,
+            "CULT": 8
+        }
+    },
+    "2055": {
+        "id": 2055,
+        "category": "事务",
+        "event": "山洪冲毁凡间村落，你救下整村百姓。",
+        "weight": 5,
+        "grade": 1,
+        "effect": {
+            "MOOD": 5,
+            "MHP": 5
+        }
+    },
+    "2056": {
+        "id": 2056,
+        "category": "事务",
+        "event": "岁末同门宴饮，觥筹交错，又是一年。",
+        "weight": 7,
+        "grade": 0,
+        "effect": {
+            "MOOD": 5,
+            "STONE": -3
+        }
+    },
+    "2057": {
+        "id": 2057,
+        "category": "事务",
+        "event": "黑市上有人出售来路不明的结金丹，要价 2400 灵石，比坊市便宜些。",
+        "weight": 6,
+        "grade": 3,
+        "include": "STONE>=2400 & STAGE>=10",
+        "effect": {
+            "STONE": -2400,
+            "PILL3": 1
+        }
+    },
+    "2058": {
+        "id": 2058,
+        "category": "战斗",
+        "event": "你截住一名负伤的魔道长老——他腰间丹囊中隐约有结金丹的灵气！",
+        "weight": 5,
+        "grade": 3,
+        "include": "STAGE>=8",
+        "battle": {
+            "name": "魔道长老",
+            "hp": 450,
+            "atk": 24,
+            "elem": "JIN",
+            "human": true,
+            "res": {
+                "JIN": 5
+            },
+            "win": 2314,
+            "lose": 2315
+        }
+    },
+    "2059": {
+        "id": 2059,
+        "category": "事务",
+        "event": "宗门炼丹宗师放出任务：他开炼结金丹，需一味【九叶金莲】，生于寒潭，有蛟龙看护，愿以一枚成丹相酬。",
+        "weight": 12,
+        "grade": 3,
+        "include": "STAGE>=8",
+        "choice": {
+            "prompt": "是否接取采莲任务？（需与寒潭蛟龙一战）",
+            "options": [
+                {
+                    "label": "接取任务",
+                    "next": 2316
+                },
+                {
+                    "label": "作罢"
+                }
+            ]
+        }
+    },
+    "2060": {
+        "id": 2060,
+        "category": "战斗",
+        "event": "亲传弟子论剑大会，魁首可得长老团重赏。",
+        "weight": 6,
+        "grade": 2,
+        "include": "POST=3",
+        "battle": {
+            "name": "亲传对手",
+            "hp": 400,
+            "atk": 22,
+            "elem": "NONE",
+            "human": true,
+            "win": 2319,
+            "lose": 2320
+        }
+    },
+    "2061": {
+        "id": 2061,
+        "category": "事务",
+        "event": "门派任务：巡查下辖三处分坛，历时一年。",
+        "weight": 8,
+        "grade": 0,
+        "effect": {
+            "STONE": 40
+        }
+    },
+    "2062": {
+        "id": 2062,
+        "category": "事务",
+        "event": "门派任务：为外门弟子讲授基础功法一年。",
+        "weight": 8,
+        "grade": 0,
+        "effect": {
+            "STONE": 30,
+            "MOOD": 3
+        }
+    },
+    "2063": {
+        "id": 2063,
+        "category": "战斗",
+        "event": "修仙盟悬赏：缉拿血祭村庄的在逃魔修，赏格一百二十灵石。",
+        "weight": 6,
+        "grade": 2,
+        "battle": {
+            "name": "在逃魔修",
+            "hp": 300,
+            "atk": 18,
+            "elem": "HUO",
+            "human": true,
+            "win": 2321,
+            "lose": 2322
+        }
+    },
+    "2064": {
+        "id": 2064,
+        "category": "战斗",
+        "event": "商会悬赏：猎杀烈风雕取其妖丹，赏格一百灵石。",
+        "weight": 6,
+        "grade": 1,
+        "battle": {
+            "name": "烈风雕",
+            "hp": 350,
+            "atk": 20,
+            "elem": "JIN",
+            "win": 2323,
+            "lose": 2324
+        }
+    },
+    "2065": {
+        "id": 2065,
+        "category": "事务",
+        "event": "炼丹宗师再度开炉炼制结金丹，仍缺【九叶金莲】，以成丹相酬。",
+        "weight": 10,
+        "grade": 3,
+        "include": "STAGE>=10 & PILL3=0",
+        "choice": {
+            "prompt": "是否接取采莲任务？（需与寒潭蛟龙一战）",
+            "options": [
+                {
+                    "label": "接取任务",
+                    "next": 2316
+                },
+                {
+                    "label": "作罢"
+                }
+            ]
+        }
+    },
+    "2066": {
+        "id": 2066,
+        "category": "事务",
+        "event": "念你镇守宗门多年、功勋卓著，长老团合议后为你赐下一枚结金丹！",
+        "weight": 8,
+        "grade": 4,
+        "once": 1,
+        "include": "STAGE>=10 & PILL3=0 & POST>=3",
+        "effect": {
+            "PILL3": 1,
+            "MOOD": 10
+        }
+    },
+    "2067": {
+        "id": 2067,
+        "category": "闭关",
+        "event": "你伤势未愈，闭关疗伤，不问外事。",
+        "weight": 30,
+        "grade": 0,
+        "include": "HPP<20",
+        "effect": {
+            "HP": 25,
+            "MP": 25,
+            "MOOD": 5
+        }
+    },
+    "2068": {
+        "id": 2068,
+        "category": "事务",
+        "event": "坊市丹房采购：【二品淤血丹】×2、【二品回气丹】×2。",
+        "weight": 8,
+        "grade": 1,
+        "include": "STONE>=50",
+        "effect": {
+            "STONE": -50,
+            "YXD2": 2,
+            "HQD2": 2
+        }
+    },
+    "2069": {
+        "id": 2069,
+        "category": "事务",
+        "event": "你以亲传弟子的身份，从宗门丹堂购得【一品淤血丹】与【一品回气丹】各一枚。",
+        "weight": 4,
+        "grade": 2,
+        "include": "POST=3 & STONE>=120",
+        "effect": {
+            "STONE": -120,
+            "YXD1": 1,
+            "HQD1": 1
+        }
+    },
+    "2070": {
+        "id": 2070,
+        "category": "事务",
+        "event": "出师历练前，传功长老赠你一张保命传送符。",
+        "weight": 4,
+        "grade": 1,
+        "include": "POST=3 & TELE<3",
+        "effect": {
+            "TELE": 1
+        }
+    },
+    "2071": {
+        "id": 2071,
+        "category": "战斗",
+        "event": "魔道发出绝杀令，一名境界远高于你的执事亲自前来取你性命！",
+        "weight": 5,
+        "grade": 3,
+        "battle": {
+            "name": "魔道执事",
+            "offset": [
+                2,
+                5
+            ],
+            "elem": "SHUI",
+            "human": true,
+            "win": 2325,
+            "lose": 2326
+        }
+    },
+    "2072": {
+        "id": 2072,
+        "category": "师门",
+        "event": "师父唤你至静室，口述一段行功口诀，令你茅塞顿开。",
+        "weight": 8,
+        "grade": 1,
+        "effect": {
+            "CULT": 8,
+            "MOOD": 3
+        }
+    },
+    "2073": {
+        "id": 2073,
+        "category": "师门",
+        "event": "师父命你下山取回一味【紫猴花】作为考验，那药谷中有守护兽出没。",
+        "weight": 6,
+        "grade": 2,
+        "choice": {
+            "prompt": "是否前往药谷采药？",
+            "options": [
+                {
+                    "label": "前往",
+                    "next": 2327
+                },
+                {
+                    "label": "推辞"
+                }
+            ]
+        }
+    },
+    "2074": {
+        "id": 2074,
+        "category": "师门",
+        "event": "你无意中发现藏经阁地宫的隐秘入口，窥见半页宗门秘录，心惊不已。",
+        "weight": 3,
+        "grade": 3,
+        "once": 1,
+        "effect": {
+            "CULT": 12,
+            "MOOD": -3
+        }
+    },
+    "2075": {
+        "id": 2075,
+        "category": "师门",
+        "event": "丹堂与剑堂素来不和，两派弟子在膳堂起了冲突，你被卷入其中。",
+        "weight": 7,
+        "grade": 1,
+        "choice": {
+            "prompt": "你打算帮哪一边？",
+            "options": [
+                {
+                    "label": "帮丹堂",
+                    "next": 2330
+                },
+                {
+                    "label": "帮剑堂",
+                    "next": 2331
+                },
+                {
+                    "label": "两不相帮"
+                }
+            ]
+        }
+    },
+    "2076": {
+        "id": 2076,
+        "category": "师门",
+        "event": "两位长老明争暗斗争夺掌教之位，宗门上下气氛紧张。",
+        "weight": 8,
+        "grade": 0,
+        "effect": {
+            "MOOD": -4
+        }
+    },
+    "2077": {
+        "id": 2077,
+        "category": "战斗",
+        "event": "你在内斗中站错了队，对方派系的弟子堵住你的去路，拔剑相向！",
+        "weight": 5,
+        "grade": 2,
+        "battle": {
+            "name": "派系弟子",
+            "hp": 380,
+            "atk": 21,
+            "elem": "JIN",
+            "human": true,
+            "win": 2332,
+            "lose": 2333
+        }
+    },
+    "2078": {
+        "id": 2078,
+        "category": "战斗",
+        "event": "宗门举兵攻打敌对宗门【血煞门】的山门领地，你随军出征，战鼓震天！",
+        "weight": 4,
+        "grade": 4,
+        "include": "STAGE>=5",
+        "battle": {
+            "name": "血煞门护法",
+            "hp": 500,
+            "atk": 26,
+            "elem": "HUO",
+            "human": true,
+            "res": {
+                "HUO": 5
+            },
+            "win": 2334,
+            "lose": 2335
+        }
+    },
+    "2079": {
+        "id": 2079,
+        "category": "师门",
+        "event": "你护送一位受伤的长老回山，长老感念于心，途中指点你三日。",
+        "weight": 6,
+        "grade": 1,
+        "effect": {
+            "CULT": 10
+        }
+    },
+    "2080": {
+        "id": 2080,
+        "category": "师门",
+        "event": "传功长老开坛讲道，你列席旁听，如饮甘霖。",
+        "weight": 9,
+        "grade": 0,
+        "effect": {
+            "CULT": 4,
+            "MOOD": 2
+        }
+    },
+    "2081": {
+        "id": 2081,
+        "category": "事务",
+        "event": "你与朋友合伙盘下坊市一间铺面，起早贪黑经营一年。",
+        "weight": 7,
+        "grade": 1,
+        "include": "STONE>=50",
+        "effect": {
+            "STONE": -50
+        },
+        "next": 2336
+    },
+    "2082": {
+        "id": 2082,
+        "category": "事务",
+        "event": "你参股的一批灵货运往海外，途中遇到风暴，血本无归。",
+        "weight": 5,
+        "grade": 0,
+        "include": "STONE>=30",
+        "effect": {
+            "STONE": -30,
+            "MOOD": -4
+        }
+    },
+    "2083": {
+        "id": 2083,
+        "category": "事务",
+        "event": "你帮宗门清点库房一年，账目分毫不差，管事给了些赏赐。",
+        "weight": 8,
+        "grade": 0,
+        "effect": {
+            "STONE": 8
+        }
+    },
+    "2084": {
+        "id": 2084,
+        "category": "历练",
+        "event": "你以一部功法残篇与过路散修交换修炼心得，互有启发。",
+        "weight": 7,
+        "grade": 1,
+        "effect": {
+            "CULT": 6
+        }
+    },
+    "2085": {
+        "id": 2085,
+        "category": "师门",
+        "event": "你将多年功法心得整理成册，留在传功阁供后辈翻阅。",
+        "weight": 6,
+        "grade": 0,
+        "effect": {
+            "MOOD": 5,
+            "CULT": 3
+        }
+    },
+    "2086": {
+        "id": 2086,
+        "category": "战斗",
+        "event": "坊市里一伙恶霸敲诈到你的摊位上，要你交出保护费！",
+        "weight": 5,
+        "grade": 1,
+        "battle": {
+            "name": "坊市恶霸",
+            "hp": 300,
+            "atk": 18,
+            "elem": "NONE",
+            "human": true,
+            "win": 2337,
+            "lose": 2338
+        }
+    },
+    "2087": {
+        "id": 2087,
+        "category": "事务",
+        "event": "商会聘你护送商队穿越荒漠，一路风尘。",
+        "weight": 7,
+        "grade": 0,
+        "effect": {
+            "STONE": 35,
+            "HP": -5
+        }
+    },
+    "2088": {
+        "id": 2088,
+        "category": "战斗",
+        "event": "山下村中狐妖作祟，村民凑了赏钱请你除妖。",
+        "weight": 6,
+        "grade": 1,
+        "battle": {
+            "name": "狐妖",
+            "hp": 320,
+            "atk": 19,
+            "elem": "MU",
+            "win": 2339,
+            "lose": 2340
+        }
+    },
+    "2089": {
+        "id": 2089,
+        "category": "历练",
+        "event": "你与一位女修互生好感，结伴同游名山大川。",
+        "weight": 5,
+        "grade": 1,
+        "effect": {
+            "MOOD": 8,
+            "HP": 10
+        }
+    },
+    "2090": {
+        "id": 2090,
+        "category": "战斗",
+        "event": "深夜，一柄淬毒匕首擦着你的咽喉飞过——有刺客！",
+        "weight": 4,
+        "grade": 2,
+        "battle": {
+            "name": "蒙面刺客",
+            "hp": 350,
+            "atk": 22,
+            "elem": "JIN",
+            "human": true,
+            "win": 2341,
+            "lose": 2342
+        }
+    },
+    "2091": {
+        "id": 2091,
+        "category": "闭关",
+        "event": "你寻得一条无主小灵脉，闭关苦修一年。",
+        "weight": 4,
+        "grade": 2,
+        "effect": {
+            "CULT": 20
+        }
+    },
+    "2092": {
+        "id": 2092,
+        "category": "突破",
+        "event": "练功岔了气，真元逆行，你呕出一口鲜血。",
+        "weight": 8,
+        "grade": 0,
+        "include": "MOOD<40",
+        "effect": {
+            "HP": -15,
+            "MP": -20
+        }
+    },
+    "2093": {
+        "id": 2093,
+        "category": "历练",
+        "event": "你发现一处坍塌大半的秘境入口，隐约有宝光透出。",
+        "weight": 4,
+        "grade": 2,
+        "choice": {
+            "prompt": "是否进入探宝？",
+            "options": [
+                {
+                    "label": "进入",
+                    "next": 2343
+                },
+                {
+                    "label": "离开"
+                }
+            ]
+        }
+    },
+    "2094": {
+        "id": 2094,
+        "category": "师门",
+        "event": "你观摩外门弟子大比，随口指点了几招，颇受欢迎。",
+        "weight": 7,
+        "grade": 0,
+        "effect": {
+            "MOOD": 3
+        }
+    },
+    "2095": {
+        "id": 2095,
+        "category": "战斗",
+        "event": "执法殿征调你协助捉拿一名叛逃弟子。",
+        "weight": 5,
+        "grade": 2,
+        "battle": {
+            "name": "叛逃弟子",
+            "hp": 380,
+            "atk": 21,
+            "elem": "SHUI",
+            "human": true,
+            "win": 2346,
+            "lose": 2347
+        }
+    },
+    "2096": {
+        "id": 2096,
+        "category": "事务",
+        "event": "炼丹房半夜失火，你冒火抢出几箱灵材。",
+        "weight": 5,
+        "grade": 1,
+        "effect": {
+            "HP": -10,
+            "STONE": 10
+        }
+    },
+    "2097": {
+        "id": 2097,
+        "category": "事务",
+        "event": "你在灵兽园帮忙驯兽，被一头幼兽挠了几爪子，倒也乐在其中。",
+        "weight": 7,
+        "grade": 0,
+        "effect": {
+            "HP": -8,
+            "MOOD": 4
+        }
+    },
+    "2098": {
+        "id": 2098,
+        "category": "事务",
+        "event": "你替人鉴定一件出土古物，眼光毒辣，得了一份谢仪。",
+        "weight": 7,
+        "grade": 0,
+        "effect": {
+            "STONE": 12
+        }
+    },
+    "2099": {
+        "id": 2099,
+        "category": "战斗",
+        "event": "练气时的旧友遭仇家追杀，浑身是血地逃到你洞府前求助。",
+        "weight": 5,
+        "grade": 2,
+        "choice": {
+            "prompt": "是否出手相助？",
+            "options": [
+                {
+                    "label": "出手相助",
+                    "next": 2348
+                },
+                {
+                    "label": "婉拒",
+                    "next": 2350
+                }
+            ]
+        }
+    },
+    "2100": {
+        "id": 2100,
+        "category": "结交",
+        "event": "你结识了一位志同道合的道友，经常一起切磋。",
+        "weight": 6,
+        "grade": 2,
+        "effect": {
+            "CULT": 30,
+            "MOOD": 5
+        }
+    },
+    "2101": {
+        "id": 2101,
+        "category": "结交",
+        "event": "你在坊市中遇到一位散修，对方给了你一些有用的情报。",
+        "weight": 5,
+        "grade": 1,
+        "effect": {
+            "CULT": 20,
+            "STONE": 50
+        }
+    },
+    "2102": {
+        "id": 2102,
+        "category": "结交",
+        "event": "你与一位女修真心生好感，对方似乎对你也有意。",
+        "weight": 3,
+        "grade": 2,
+        "effect": {
+            "MOOD": 15,
+            "CULT": 30
+        }
+    },
+    "2103": {
+        "id": 2103,
+        "category": "结交",
+        "event": "你与一位富商交好，对方经常给你介绍生意。",
+        "weight": 4,
+        "grade": 2,
+        "effect": {
+            "STONE": 100,
+            "CULT": 20
+        }
+    },
+    "2104": {
+        "id": 2104,
+        "category": "结交",
+        "event": "你收留了一位落魄的练气期修士，对方感激不尽。",
+        "weight": 3,
+        "grade": 2,
+        "effect": {
+            "MOOD": 10,
+            "CULT": 30
+        }
+    },
+    "2105": {
+        "id": 2105,
+        "category": "结仇",
+        "event": "你与一位筑基期修士因争夺资源结下了死仇。",
+        "weight": 4,
+        "grade": 0,
+        "effect": {
+            "MOOD": -10
+        }
+    },
+    "2106": {
+        "id": 2106,
+        "category": "结仇",
+        "event": "你的一位好友被魔道所害，你发誓要为其报仇。",
+        "weight": 3,
+        "grade": 0,
+        "effect": {
+            "MOOD": -20,
+            "CULT": 30
+        }
+    },
+    "2107": {
+        "id": 2107,
+        "category": "结交",
+        "event": "你在一次任务中与几位修士合作得非常愉快。",
+        "weight": 5,
+        "grade": 1,
+        "effect": {
+            "CULT": 40,
+            "MOOD": 5
+        }
+    },
+    "2120": {
+        "id": 2120,
+        "category": "经济",
+        "event": "你经营了一片灵田，每年都有稳定收入。",
+        "weight": 5,
+        "grade": 1,
+        "include": "STONE>=200",
+        "effect": {
+            "STONE": 400
+        }
+    },
+    "2121": {
+        "id": 2121,
+        "category": "经济",
+        "event": "你开了一家小丹铺，生意还不错。",
+        "weight": 4,
+        "grade": 2,
+        "include": "STONE>=500",
+        "effect": {
+            "STONE": 900,
+            "MOOD": 5
+        }
+    },
+    "2122": {
+        "id": 2122,
+        "category": "经济",
+        "event": "你参加了一场拍卖会，虽然没买到什么，但长了见识。",
+        "weight": 4,
+        "grade": 1,
+        "effect": {
+            "CULT": 30,
+            "MOOD": 5
+        }
+    },
+    "2123": {
+        "id": 2123,
+        "category": "经济",
+        "event": "你在拍卖会上拍到了一件心仪的法器。",
+        "weight": 2,
+        "grade": 3,
+        "include": "STONE>=1000",
+        "effect": {
+            "STONE": -1000,
+            "STR": 5,
+            "MOOD": 10
+        }
+    },
+    "2124": {
+        "id": 2124,
+        "category": "经济",
+        "event": "你的丹铺生意红火，有人慕名而来求购丹药。",
+        "weight": 3,
+        "grade": 2,
+        "include": "STONE>=300",
+        "effect": {
+            "STONE": 600,
+            "HQD2": -2
+        }
+    },
+    "2125": {
+        "id": 2125,
+        "category": "经济",
+        "event": "你投资了一支探险队，他们带回了珍贵的物品。",
+        "weight": 3,
+        "grade": 3,
+        "include": "STONE>=800",
+        "effect": {
+            "STONE": 1500
+        }
+    },
+    "2126": {
+        "id": 2126,
+        "category": "经济",
+        "event": "你遭遇了一场骗局，损失了不少灵石。",
+        "weight": 3,
+        "grade": 0,
+        "effect": {
+            "STONE": -150,
+            "MOOD": -10
+        }
+    },
+    "2127": {
+        "id": 2127,
+        "category": "经济",
+        "event": "你发现了一条赚钱的渠道，利润丰厚。",
+        "weight": 2,
+        "grade": 3,
+        "include": "STONE>=300",
+        "effect": {
+            "STONE": 800,
+            "MOOD": 8
+        }
+    },
+    "2145": {
+        "id": 2145,
+        "category": "炼丹",
+        "event": "你炼制出了第一批筑基期回气丹，品质上乘。",
+        "weight": 4,
+        "grade": 2,
+        "include": "STONE>=100",
+        "effect": {
+            "STONE": -100,
+            "HQD2": 2,
+            "MOOD": 5
+        }
+    },
+    "2146": {
+        "id": 2146,
+        "category": "炼丹",
+        "event": "你尝试炼制结丹丹，虽然失败了，但收获不小。",
+        "weight": 2,
+        "grade": 1,
+        "include": "STONE>=500",
+        "effect": {
+            "STONE": -500,
+            "CULT": 50,
+            "MOOD": -10
+        }
+    },
+    "2147": {
+        "id": 2147,
+        "category": "炼丹",
+        "event": "你成功炼出了一枚结丹丹！",
+        "weight": 1,
+        "grade": 4,
+        "once": 1,
+        "include": "STONE>=1000 & STAGE>=20",
+        "effect": {
+            "STONE": -1000,
+            "PILL3": 1,
+            "MOOD": 15
+        }
+    },
+    "2148": {
+        "id": 2148,
+        "category": "炼丹",
+        "event": "你炼出了一批疗伤丹药，受到修士们的欢迎。",
+        "weight": 3,
+        "grade": 2,
+        "include": "STONE>=200",
+        "effect": {
+            "STONE": 400,
+            "YXD2": 3
+        }
+    },
+    "2149": {
+        "id": 2149,
+        "category": "炼丹",
+        "event": "你研究出了一种新的丹方，能大幅提升修炼速度。",
+        "weight": 2,
+        "grade": 3,
+        "include": "STONE>=300",
+        "effect": {
+            "STONE": -300,
+            "CULT": 60,
+            "MOOD": 5
+        }
+    },
+    "2150": {
+        "id": 2150,
+        "category": "炼丹",
+        "event": "你炼丹不慎引发火灾，损失了一些物资。",
+        "weight": 2,
+        "grade": 0,
+        "include": "STONE>=100",
+        "effect": {
+            "STONE": -100,
+            "HP": -25,
+            "MOOD": -10
+        }
+    },
+    "2165": {
+        "id": 2165,
+        "category": "炼体",
+        "event": "你以筑基之力淬炼肉身，体魄大增。",
+        "weight": 4,
+        "grade": 2,
+        "include": "STONE>=100",
+        "effect": {
+            "STONE": -100,
+            "MHP": 40,
+            "STR": 3
+        }
+    },
+    "2166": {
+        "id": 2166,
+        "category": "炼体",
+        "event": "你尝试了一种上古炼体术，效果惊人。",
+        "weight": 2,
+        "grade": 3,
+        "include": "STONE>=300",
+        "effect": {
+            "STONE": -300,
+            "MHP": 80,
+            "STR": 5,
+            "HP": -20
+        }
+    },
+    "2167": {
+        "id": 2167,
+        "category": "炼体",
+        "event": "你在炼体过程中领悟了一些战斗技巧。",
+        "weight": 3,
+        "grade": 2,
+        "effect": {
+            "STR": 4,
+            "CULT": 40
+        }
+    },
+    "2168": {
+        "id": 2168,
+        "category": "炼体",
+        "event": "你获得了一份珍贵的炼体药方。",
+        "weight": 2,
+        "grade": 3,
+        "once": 1,
+        "effect": {
+            "MHP": 60,
+            "MOOD": 5
+        }
+    },
+    "2180": {
+        "id": 2180,
+        "category": "机缘",
+        "event": "你发现了一处上古秘境入口，冒险进入。",
+        "weight": 3,
+        "grade": 3,
+        "effect": {
+            "CULT": 80,
+            "STONE": 300
+        }
+    },
+    "2181": {
+        "id": 2181,
+        "category": "机缘",
+        "event": "你在秘境中获得了一份筑基期功法残篇。",
+        "weight": 2,
+        "grade": 3,
+        "once": 1,
+        "effect": {
+            "CULT": 100,
+            "MOOD": 10
+        }
+    },
+    "2182": {
+        "id": 2182,
+        "category": "机缘",
+        "event": "你遇到了一头受伤的灵兽，它感激地跟随你。",
+        "weight": 2,
+        "grade": 4,
+        "once": 1,
+        "effect": {
+            "STR": 4,
+            "MHP": 30,
+            "MOOD": 15
+        }
+    },
+    "2183": {
+        "id": 2183,
+        "category": "机缘",
+        "event": "你感应到一处福地，在其中修炼事半功倍。",
+        "weight": 3,
+        "grade": 3,
+        "effect": {
+            "CULT": 60,
+            "MOOD": 10
+        }
+    },
+    "2184": {
+        "id": 2184,
+        "category": "机缘",
+        "event": "你在坊市捡漏，购得一件价值连城的宝物。",
+        "weight": 2,
+        "grade": 4,
+        "include": "STONE>=200",
+        "effect": {
+            "STONE": 1500
+        }
+    },
+    "2200": {
+        "id": 2200,
+        "category": "正道",
+        "event": "你下山除妖，受到百姓爱戴。",
+        "weight": 5,
+        "grade": 2,
+        "effect": {
+            "MOOD": 10,
+            "CULT": 40
+        }
+    },
+    "2201": {
+        "id": 2201,
+        "category": "正道",
+        "event": "你惩治了一位作恶的修士，大快人心。",
+        "weight": 4,
+        "grade": 2,
+        "battle": {
+            "name": "恶修",
+            "hp": 300,
+            "atk": 20,
+            "elem": "XUE",
+            "human": true,
+            "res": {
+                "XUE": 5
+            },
+            "win": 2202,
+            "lose": 2203
+        }
+    },
+    "2202": {
+        "id": 2202,
+        "category": "正道",
+        "event": "你击败了恶修，名声大振。",
+        "NoRandom": 1,
+        "grade": 3,
+        "effect": {
+            "CULT": 80,
+            "MOOD": 10,
+            "STONE": 100
+        }
+    },
+    "2203": {
+        "id": 2203,
+        "category": "正道",
+        "event": "你不敌恶修，虽然受了伤，但依然坚守正道。",
+        "NoRandom": 1,
+        "grade": 1,
+        "effect": {
+            "HP": -30,
+            "MOOD": 5
+        }
+    },
+    "2204": {
+        "id": 2204,
+        "category": "正道",
+        "event": "你护送了一位重要人物，获得了丰厚报酬。",
+        "weight": 4,
+        "grade": 2,
+        "effect": {
+            "STONE": 200,
+            "CULT": 30
+        }
+    },
+    "2215": {
+        "id": 2215,
+        "category": "师承",
+        "event": "你的师尊传授了你一门绝学。",
+        "weight": 3,
+        "grade": 3,
+        "include": "STAGE>=15",
+        "effect": {
+            "CULT": 120,
+            "MOOD": 10
+        }
+    },
+    "2216": {
+        "id": 2216,
+        "category": "师承",
+        "event": "你与师尊产生了分歧，双方都有些不愉快。",
+        "weight": 2,
+        "grade": 0,
+        "effect": {
+            "MOOD": -15,
+            "CULT": -30
+        }
+    },
+    "2217": {
+        "id": 2217,
+        "category": "师承",
+        "event": "你的师尊闭关前给你留下了一些珍贵物品。",
+        "weight": 2,
+        "grade": 3,
+        "include": "STAGE>=25",
+        "effect": {
+            "STONE": 200,
+            "PILL2": 1,
+            "MOOD": 10
+        }
+    },
+    "2218": {
+        "id": 2218,
+        "category": "师承",
+        "event": "你开始指导一位练气期弟子修炼。",
+        "weight": 4,
+        "grade": 2,
+        "effect": {
+            "CULT": 40,
+            "MOOD": 8
+        }
+    },
+    "2300": {
+        "id": 2300,
+        "category": "战斗",
+        "event": "你斩杀恶蛟，抽筋剥皮，宗门厚赏。",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "STONE": 40,
+            "CULT": 20
+        }
+    },
+    "2301": {
+        "id": 2301,
+        "category": "战斗",
+        "event": "恶蛟潜入深潭，你无功而返，被执事记了一笔。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "MOOD": -5
+        }
+    },
+    "2302": {
+        "id": 2302,
+        "category": "战斗",
+        "event": "你斩灭心魔，道心坚如磐石。",
+        "NoRandom": 1,
+        "grade": 3,
+        "effect": {
+            "MOOD": 10,
+            "CULT": 15
+        }
+    },
+    "2303": {
+        "id": 2303,
+        "category": "战斗",
+        "event": "心魔噬主，你闭关调养了一年才缓过来。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "MOOD": -10,
+            "CULT": -10
+        }
+    },
+    "2304": {
+        "id": 2304,
+        "category": "战斗",
+        "event": "你拿下细作，从其身上搜出不少好东西，内含二品淤血丹一枚。",
+        "NoRandom": 1,
+        "grade": 3,
+        "effect": {
+            "STONE": 25,
+            "YXD2": 1
+        }
+    },
+    "2305": {
+        "id": 2305,
+        "category": "战斗",
+        "event": "细作盗走你的储物袋，扬长而去。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "STONE": -15,
+            "MOOD": -5
+        }
+    },
+    "2306": {
+        "id": 2306,
+        "category": "战斗",
+        "event": "你三招落败对手，收下赌注扬长而去。",
+        "NoRandom": 1,
+        "grade": 2,
+        "effect": {
+            "STONE": 30
+        }
+    },
+    "2307": {
+        "id": 2307,
+        "category": "战斗",
+        "event": "你棋差一着，输掉赌注。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "STONE": -20,
+            "MOOD": -3
+        }
+    },
+    "2308": {
+        "id": 2308,
+        "category": "战斗",
+        "event": "你焚了尸傀，乡里平安，里正奉上谢礼。",
+        "NoRandom": 1,
+        "grade": 2,
+        "effect": {
+            "STONE": 20,
+            "MOOD": 3
+        }
+    },
+    "2309": {
+        "id": 2309,
+        "category": "战斗",
+        "event": "尸傀刀枪不入，你被尸气所伤，败走。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -15,
+            "MOOD": -4
+        }
+    },
+    "2310": {
+        "id": 2310,
+        "category": "战斗",
+        "event": "你杀出重围，镖银无损，镖局重谢。",
+        "NoRandom": 1,
+        "grade": 3,
+        "effect": {
+            "STONE": 30
+        }
+    },
+    "2311": {
+        "id": 2311,
+        "category": "战斗",
+        "event": "镖银被劫，你自掏腰包赔了损失。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "STONE": -25,
+            "MOOD": -4
+        }
+    },
+    "2312": {
+        "id": 2312,
+        "category": "战斗",
+        "event": "你阵斩魔修头目，战功彪炳。",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "CULT": 15,
+            "STONE": 20
+        }
+    },
+    "2313": {
+        "id": 2313,
+        "category": "战斗",
+        "event": "魔窟反扑，你随败军撤回，闭门疗伤。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "MOOD": -5
+        }
+    },
+    "2314": {
+        "id": 2314,
+        "category": "战斗",
+        "event": "你杀人越货，缴获一枚结金丹！",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "PILL3": 1,
+            "STONE": 20
+        },
+        "next": 2422
+    },
+    "2315": {
+        "id": 2315,
+        "category": "战斗",
+        "event": "魔道长老燃烧精血遁走，你损失惨重。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "STONE": -20,
+            "MOOD": -5
+        }
+    },
+    "2316": {
+        "id": 2316,
+        "category": "战斗",
+        "event": "你潜入寒潭采莲，看护金莲的寒蛟破水而出！",
+        "NoRandom": 1,
+        "grade": 2,
+        "battle": {
+            "name": "寒潭蛟龙",
+            "hp": 300,
+            "atk": 16,
+            "elem": "SHUI",
+            "res": {
+                "SHUI": 4
+            },
+            "win": 2317,
+            "lose": 2318
+        }
+    },
+    "2317": {
+        "id": 2317,
+        "category": "事务",
+        "event": "你采回九叶金莲，炼丹宗师开炉四十九日，赠你一枚结金丹！",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "PILL3": 1,
+            "MOOD": 5
+        }
+    },
+    "2318": {
+        "id": 2318,
+        "category": "战斗",
+        "event": "你不敌寒蛟，负伤而归，炼丹宗师摇头叹息。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "MOOD": -3
+        }
+    },
+    "2319": {
+        "id": 2319,
+        "category": "战斗",
+        "event": "你力压群雄夺魁，长老团重赏。",
+        "NoRandom": 1,
+        "grade": 3,
+        "effect": {
+            "STONE": 150,
+            "MOOD": 10
+        }
+    },
+    "2320": {
+        "id": 2320,
+        "category": "战斗",
+        "event": "你止步四强，回去潜心修炼。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "MOOD": -4,
+            "CULT": 10
+        }
+    },
+    "2321": {
+        "id": 2321,
+        "category": "战斗",
+        "event": "你将魔修绳之以法，赏格尽入囊中，另缴获二品淤血丹一枚与传送符一张。",
+        "NoRandom": 1,
+        "grade": 3,
+        "effect": {
+            "STONE": 120,
+            "YXD2": 1,
+            "TELE": 1
+        }
+    },
+    "2322": {
+        "id": 2322,
+        "category": "战斗",
+        "event": "魔修狡诈逃脱，你还被讹了一笔汤药费。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "STONE": -10,
+            "MOOD": -3
+        }
+    },
+    "2323": {
+        "id": 2323,
+        "category": "战斗",
+        "event": "你猎得烈风雕，商会如约兑付赏金。",
+        "NoRandom": 1,
+        "grade": 2,
+        "effect": {
+            "STONE": 100
+        }
+    },
+    "2324": {
+        "id": 2324,
+        "category": "战斗",
+        "event": "烈风雕扶摇直上，你望尘莫及。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "MOOD": -3
+        }
+    },
+    "2325": {
+        "id": 2325,
+        "category": "战斗",
+        "event": "你越级斩杀魔道执事，震动一方，缴获其法袋！",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "CULT": 15,
+            "STONE": 40,
+            "MOOD": 5,
+            "YXD2": 1
+        }
+    },
+    "2326": {
+        "id": 2326,
+        "category": "战斗",
+        "event": "境界悬殊，你燃烧精血遁走，元气大伤。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "STONE": -20,
+            "MOOD": -5
+        }
+    },
+    "2327": {
+        "id": 2327,
+        "category": "战斗",
+        "event": "你刚摘下紫猴花，一头铁背猿暴起发难！",
+        "NoRandom": 1,
+        "grade": 2,
+        "battle": {
+            "name": "铁背猿",
+            "hp": 280,
+            "atk": 18,
+            "elem": "TU",
+            "win": 2328,
+            "lose": 2329
+        }
+    },
+    "2328": {
+        "id": 2328,
+        "category": "师门",
+        "event": "你采药而归，师父抚须颔首，又传你一段心法。",
+        "NoRandom": 1,
+        "grade": 3,
+        "effect": {
+            "CULT": 10,
+            "MOOD": 5
+        }
+    },
+    "2329": {
+        "id": 2329,
+        "category": "师门",
+        "event": "你被铁背猿所伤，空手而归，师父虽未责怪，你却暗自发奋。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "MOOD": -3
+        }
+    },
+    "2330": {
+        "id": 2330,
+        "category": "师门",
+        "event": "你替丹堂解了围，丹堂执事记下你这份人情。",
+        "NoRandom": 1,
+        "grade": 1,
+        "effect": {
+            "STONE": 10,
+            "YXD3": 1
+        }
+    },
+    "2331": {
+        "id": 2331,
+        "category": "师门",
+        "event": "你替剑堂出头，剑堂弟子与你称兄道弟，切磋间你颇有收获。",
+        "NoRandom": 1,
+        "grade": 1,
+        "effect": {
+            "STR": 1,
+            "MOOD": 2
+        }
+    },
+    "2332": {
+        "id": 2332,
+        "category": "战斗",
+        "event": "你击退了寻衅者，对方派系暂时不敢再来招惹你。",
+        "NoRandom": 1,
+        "grade": 2,
+        "effect": {
+            "MOOD": 4,
+            "CULT": 5
+        }
+    },
+    "2333": {
+        "id": 2333,
+        "category": "战斗",
+        "event": "你寡不敌众吃了大亏，洞府也被对方占了去。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -15,
+            "MOOD": -6
+        }
+    },
+    "2334": {
+        "id": 2334,
+        "category": "战斗",
+        "event": "你阵斩血煞门护法，宗门大获全胜，论功行赏你名列三甲！",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "STONE": 60,
+            "CULT": 20,
+            "MOOD": 6
+        }
+    },
+    "2335": {
+        "id": 2335,
+        "category": "战斗",
+        "event": "战事胶着，你随败军撤回山门，舔舐伤口。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "MOOD": -5
+        }
+    },
+    "2336": {
+        "id": 2336,
+        "category": "事务",
+        "event": "铺面生意红火，年底分红颇为可观。",
+        "NoRandom": 1,
+        "grade": 2,
+        "effect": {
+            "STONE": 90,
+            "MOOD": 2
+        }
+    },
+    "2337": {
+        "id": 2337,
+        "category": "战斗",
+        "event": "你三拳两脚打跑了恶霸，坊市商贩纷纷叫好。",
+        "NoRandom": 1,
+        "grade": 2,
+        "effect": {
+            "STONE": 15,
+            "MOOD": 3
+        }
+    },
+    "2338": {
+        "id": 2338,
+        "category": "战斗",
+        "event": "恶霸人多势众，你破财免灾。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "STONE": -15,
+            "MOOD": -3
+        }
+    },
+    "2339": {
+        "id": 2339,
+        "category": "战斗",
+        "event": "你斩了狐妖，村民敲锣打鼓送你出村。",
+        "NoRandom": 1,
+        "grade": 2,
+        "effect": {
+            "STONE": 50,
+            "MOOD": 3
+        }
+    },
+    "2340": {
+        "id": 2340,
+        "category": "战斗",
+        "event": "狐妖幻术了得，你被迷得晕头转向，败退而走。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "MOOD": -3
+        }
+    },
+    "2341": {
+        "id": 2341,
+        "category": "战斗",
+        "event": "你反杀了刺客，从其身上搜出雇主的信物和一袋灵石。",
+        "NoRandom": 1,
+        "grade": 3,
+        "effect": {
+            "STONE": 30,
+            "MOOD": 2
+        }
+    },
+    "2342": {
+        "id": 2342,
+        "category": "战斗",
+        "event": "刺客身手诡异，你中毒负伤，对方扬长而去。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -20,
+            "MOOD": -4
+        }
+    },
+    "2343": {
+        "id": 2343,
+        "category": "战斗",
+        "event": "秘境中一尊石守卫轰然苏醒，拦在身前！",
+        "NoRandom": 1,
+        "grade": 2,
+        "battle": {
+            "name": "石守卫",
+            "hp": 400,
+            "atk": 22,
+            "elem": "TU",
+            "res": {
+                "TU": 4
+            },
+            "win": 2344,
+            "lose": 2345
+        }
+    },
+    "2344": {
+        "id": 2344,
+        "category": "历练",
+        "event": "你击碎石守卫，在秘境深处寻得前人遗留的储物镯。",
+        "NoRandom": 1,
+        "grade": 3,
+        "effect": {
+            "STONE": 60,
+            "CULT": 15
+        }
+    },
+    "2345": {
+        "id": 2345,
+        "category": "历练",
+        "event": "石守卫力大无穷，你且战且退，逃出了秘境。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -10
+        }
+    },
+    "2346": {
+        "id": 2346,
+        "category": "战斗",
+        "event": "你将叛徒擒回宗门，执法殿记下你的功劳。",
+        "NoRandom": 1,
+        "grade": 2,
+        "effect": {
+            "STONE": 40,
+            "MOOD": 2
+        }
+    },
+    "2347": {
+        "id": 2347,
+        "category": "战斗",
+        "event": "叛徒拼死突围逃走，执法殿对你颇有微词。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "MOOD": -3
+        }
+    },
+    "2348": {
+        "id": 2348,
+        "category": "战斗",
+        "event": "追兵杀到，为首之人狞笑着要你交人！",
+        "NoRandom": 1,
+        "grade": 2,
+        "battle": {
+            "name": "追兵头目",
+            "hp": 400,
+            "atk": 23,
+            "elem": "HUO",
+            "human": true,
+            "win": 2349,
+            "lose": 2351
+        }
+    },
+    "2349": {
+        "id": 2349,
+        "category": "战斗",
+        "event": "你击退追兵，旧友感激涕零，将随身积蓄相赠。",
+        "NoRandom": 1,
+        "grade": 3,
+        "effect": {
+            "MOOD": 6,
+            "STONE": 20
+        }
+    },
+    "2350": {
+        "id": 2350,
+        "category": "历练",
+        "event": "你闭门不出，旧友含恨离去，你心中难安。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "MOOD": -5
+        }
+    },
+    "2351": {
+        "id": 2351,
+        "category": "战斗",
+        "event": "你不敌追兵，与旧友各自逃生，狼狈不堪。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -20,
+            "MOOD": -4
+        }
+    },
+    "2352": {
+        "id": 2352,
+        "category": "师门",
+        "event": "席间长老亲自为你斟酒，趁兴指点你几句剑理。",
+        "NoRandom": 1,
+        "grade": 2,
+        "effect": {
+            "CULT": 6,
+            "MOOD": 3,
+            "STONE": -5
+        }
+    },
+    "2353": {
+        "id": 2353,
+        "category": "战斗",
+        "event": "你查到关键证据时，长老的心腹破门而入，杀人灭口！",
+        "NoRandom": 1,
+        "grade": 3,
+        "battle": {
+            "name": "长老心腹",
+            "hp": 450,
+            "atk": 24,
+            "elem": "MU",
+            "human": true,
+            "win": 2354,
+            "lose": 2355
+        }
+    },
+    "2354": {
+        "id": 2354,
+        "category": "师门",
+        "event": "你斩杀心腹、带回罪证，掌教大喜，重重有赏。",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "STONE": 80,
+            "MOOD": 6
+        }
+    },
+    "2355": {
+        "id": 2355,
+        "category": "师门",
+        "event": "你不敌对方，证据被毁，只得连夜逃出宗门避祸。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -15,
+            "MOOD": -6
+        }
+    },
+    "2356": {
+        "id": 2356,
+        "category": "战斗",
+        "event": "你夜袭哨楼得手，提着首级回山领赏。",
+        "NoRandom": 1,
+        "grade": 2,
+        "effect": {
+            "STONE": 45
+        }
+    },
+    "2357": {
+        "id": 2357,
+        "category": "战斗",
+        "event": "哨探警觉，惊动了援兵，你狼狈撤退。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "MOOD": -3
+        }
+    },
+    "2358": {
+        "id": 2358,
+        "category": "战斗",
+        "event": "你杀散劫匪，灵谷颗粒无损，管事加发了赏钱。",
+        "NoRandom": 1,
+        "grade": 1,
+        "effect": {
+            "STONE": 25
+        }
+    },
+    "2359": {
+        "id": 2359,
+        "category": "战斗",
+        "event": "灵谷被劫走两车，你被罚俸一年。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "STONE": -20,
+            "MOOD": -3
+        }
+    },
+    "2360": {
+        "id": 2360,
+        "category": "战斗",
+        "event": "你剑下留情，胜而不杀，同门心服口服，恩怨两清。",
+        "NoRandom": 1,
+        "grade": 3,
+        "effect": {
+            "CULT": 10,
+            "MOOD": 3
+        }
+    },
+    "2361": {
+        "id": 2361,
+        "category": "战斗",
+        "event": "你败下阵来，被夺走洞府，沦为门中笑柄。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -25,
+            "MOOD": -6
+        }
+    },
+    "2362": {
+        "id": 2362,
+        "category": "战斗",
+        "event": "你反伏击得手，缴获魔修的储物袋。",
+        "NoRandom": 1,
+        "grade": 2,
+        "effect": {
+            "STONE": 30,
+            "YXD2": 1
+        }
+    },
+    "2363": {
+        "id": 2363,
+        "category": "战斗",
+        "event": "魔修阴险狡诈，你负伤突围。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -15,
+            "MOOD": -3
+        }
+    },
+    "2364": {
+        "id": 2364,
+        "category": "事务",
+        "event": "同门连本带利归还了灵石，信誉不错。",
+        "NoRandom": 1,
+        "grade": 1,
+        "effect": {
+            "STONE": 55,
+            "MOOD": 2
+        }
+    },
+    "2400": {
+        "id": 2400,
+        "category": "师门",
+        "event": "你撞见师父深夜与一名蒙面人会面，言语间似乎牵扯一桩宗门旧案。",
+        "weight": 3,
+        "grade": 2,
+        "once": 1,
+        "effect": {
+            "MOOD": -3,
+            "CULT": 5
+        }
+    },
+    "2401": {
+        "id": 2401,
+        "category": "师门",
+        "event": "剑堂长老设宴，广发请帖拉拢年轻弟子，你也在受邀之列。",
+        "weight": 6,
+        "grade": 1,
+        "choice": {
+            "prompt": "是否赴宴？",
+            "options": [
+                {
+                    "label": "赴宴",
+                    "next": 2352
+                },
+                {
+                    "label": "婉拒"
+                }
+            ]
+        }
+    },
+    "2402": {
+        "id": 2402,
+        "category": "师门",
+        "event": "两派弟子在演武场大打出手，飞剑无眼，你被波及受了些伤。",
+        "weight": 6,
+        "grade": 0,
+        "effect": {
+            "HP": -10,
+            "MOOD": -3
+        }
+    },
+    "2403": {
+        "id": 2403,
+        "category": "师门",
+        "event": "掌教密令你暗中调查一位疑似通敌的长老，此事凶险异常。",
+        "weight": 4,
+        "grade": 3,
+        "include": "POST>=2",
+        "choice": {
+            "prompt": "是否接下这桩密令？",
+            "options": [
+                {
+                    "label": "接令",
+                    "next": 2353
+                },
+                {
+                    "label": "推辞"
+                }
+            ]
+        }
+    },
+    "2404": {
+        "id": 2404,
+        "category": "战斗",
+        "event": "宗门悬赏：摘取血煞门外围哨探的首级，赏格四十五灵石。",
+        "weight": 5,
+        "grade": 2,
+        "include": "STAGE>=4",
+        "battle": {
+            "name": "血煞门哨探",
+            "hp": 350,
+            "atk": 20,
+            "elem": "HUO",
+            "human": true,
+            "win": 2356,
+            "lose": 2357
+        }
+    },
+    "2405": {
+        "id": 2405,
+        "category": "战斗",
+        "event": "你押运灵谷回山，途中劫匪拦路！",
+        "weight": 6,
+        "grade": 1,
+        "battle": {
+            "name": "劫匪头目",
+            "hp": 300,
+            "atk": 18,
+            "elem": "NONE",
+            "human": true,
+            "win": 2358,
+            "lose": 2359
+        }
+    },
+    "2406": {
+        "id": 2406,
+        "category": "师门",
+        "event": "你在藏经阁抄录功法一年，于字里行间偶有所悟。",
+        "weight": 8,
+        "grade": 1,
+        "effect": {
+            "CULT": 7
+        }
+    },
+    "2407": {
+        "id": 2407,
+        "category": "师门",
+        "event": "师父将早年随身使用的一件法器赠你，嘱你勤勉修行。",
+        "weight": 3,
+        "grade": 3,
+        "once": 1,
+        "effect": {
+            "STR": 2,
+            "MHP": 10,
+            "MOOD": 5
+        }
+    },
+    "2408": {
+        "id": 2408,
+        "category": "师门",
+        "event": "你的启蒙师父寿元耗尽，于静室坐化。你守灵七日，悲痛中道心反而通透。",
+        "weight": 2,
+        "grade": 3,
+        "once": 1,
+        "include": "STAGE>=6",
+        "effect": {
+            "MOOD": -8,
+            "CULT": 15
+        }
+    },
+    "2409": {
+        "id": 2409,
+        "category": "师门",
+        "event": "你与一名同门争夺一间灵气充裕的洞府，自此结下梁子。",
+        "weight": 6,
+        "grade": 0,
+        "effect": {
+            "MOOD": -4
+        }
+    },
+    "2410": {
+        "id": 2410,
+        "category": "战斗",
+        "event": "结仇的同门递来生死帖，约你后山了断！",
+        "weight": 4,
+        "grade": 3,
+        "include": "STAGE>=4",
+        "battle": {
+            "name": "结仇同门",
+            "hp": 420,
+            "atk": 23,
+            "elem": "JIN",
+            "human": true,
+            "win": 2360,
+            "lose": 2361
+        }
+    },
+    "2411": {
+        "id": 2411,
+        "category": "战斗",
+        "event": "你下山办事，半路遭魔道修士伏击！",
+        "weight": 5,
+        "grade": 2,
+        "battle": {
+            "name": "伏击魔修",
+            "hp": 400,
+            "atk": 22,
+            "elem": "SHUI",
+            "human": true,
+            "win": 2362,
+            "lose": 2363
+        }
+    },
+    "2412": {
+        "id": 2412,
+        "category": "事务",
+        "event": "你瞅准行情低买高卖一批符箓，小赚一笔。",
+        "weight": 7,
+        "grade": 0,
+        "include": "STONE>=20",
+        "effect": {
+            "STONE": 25
+        }
+    },
+    "2413": {
+        "id": 2413,
+        "category": "事务",
+        "event": "你放出一笔灵石贷给急需周转的同门，立下字据。",
+        "weight": 5,
+        "grade": 1,
+        "include": "STONE>=40",
+        "effect": {
+            "STONE": -40
+        },
+        "next": 2364
+    },
+    "2414": {
+        "id": 2414,
+        "category": "事务",
+        "event": "你早前囤的一批妖丹行情上涨，转手获利。",
+        "weight": 6,
+        "grade": 0,
+        "effect": {
+            "STONE": 20
+        }
+    },
+    "2415": {
+        "id": 2415,
+        "category": "事务",
+        "event": "你为宗门采买一年物资，从中吃了些回扣，心中略感不安。",
+        "weight": 6,
+        "grade": 0,
+        "effect": {
+            "STONE": 10,
+            "MOOD": -2
+        }
+    },
+    "2416": {
+        "id": 2416,
+        "category": "历练",
+        "event": "你在山间灵泉中浸泡月余，筋骨舒畅，气血充盈。",
+        "weight": 6,
+        "grade": 1,
+        "effect": {
+            "HP": 20,
+            "MHP": 8
+        }
+    },
+    "2417": {
+        "id": 2417,
+        "category": "事务",
+        "event": "你修复一部上古丹方，卖给丹房获利不菲。",
+        "weight": 5,
+        "grade": 1,
+        "effect": {
+            "STONE": 25
+        }
+    },
+    "2418": {
+        "id": 2418,
+        "category": "事务",
+        "event": "你将一枚用不上的三品淤血丹转手卖出。",
+        "weight": 5,
+        "grade": 0,
+        "include": "YXD3>0",
+        "effect": {
+            "YXD3": -1,
+            "STONE": 15
+        }
+    },
+    "2419": {
+        "id": 2419,
+        "category": "事务",
+        "event": "你在坊市开坛讲道，散修们交钱听讲，口碑渐起。",
+        "weight": 6,
+        "grade": 0,
+        "effect": {
+            "STONE": 15,
+            "MOOD": 2
+        }
+    },
+    "2420": {
+        "id": 2420,
+        "category": "师门",
+        "event": "你参与维护护山大阵一年，对阵法与灵力运转理解更深。",
+        "weight": 7,
+        "grade": 1,
+        "effect": {
+            "CULT": 5,
+            "MMP": 6
+        }
+    },
+    "2421": {
+        "id": 2421,
+        "category": "师门",
+        "event": "宗门年终考核，你名列前茅，得了执事堂的嘉奖。",
+        "weight": 6,
+        "grade": 1,
+        "include": "POST>=2",
+        "effect": {
+            "STONE": 15,
+            "MOOD": 4
+        }
+    },
+    "2422": {
+        "id": 2422,
+        "category": "心魔",
+        "event": "丹囊入手的刹那，你发觉自己对夺人机缘再无半分愧意，一缕魔念就此扎根。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "MOOD": -12,
+            "STR": 2
+        }
+    },
+    "2423": {
+        "id": 2423,
+        "category": "事务",
+        "event": "你已是筑基修士，昔日留下的筑基丹再无用处，丹堂愿以一百八十灵石回收。",
+        "weight": 6,
+        "grade": 1,
+        "include": "PILL2>0",
+        "effect": {
+            "PILL2": -1,
+            "STONE": 180
+        }
+    },
+    "2424": {
+        "id": 2424,
+        "category": "心魔",
+        "event": "你以那名魔道长老的遗物为引，追查到一处隐秘血池。血气能助长修为，也会侵蚀道心。",
+        "weight": 7,
+        "grade": 3,
+        "once": 1,
+        "include": "EVT=2422 & STAGE>=6",
+        "choice": {
+            "prompt": "是否炼化血池？",
+            "options": [
+                {
+                    "label": "炼化血池",
+                    "next": 2425
+                },
+                {
+                    "label": "毁去血池",
+                    "next": 2426
+                }
+            ]
+        }
+    },
+    "2425": {
+        "id": 2425,
+        "category": "心魔",
+        "event": "你炼尽满池精血，修为暴涨，眼底却再也化不开一抹猩红。",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "CULT": 80,
+            "MHP": 20,
+            "MOOD": -20
+        },
+        "next": 2427
+    },
+    "2426": {
+        "id": 2426,
+        "category": "心魔",
+        "event": "你一剑斩碎血池阵眼，魔念虽未尽除，道心总算守住一线清明。",
+        "NoRandom": 1,
+        "grade": 3,
+        "effect": {
+            "CULT": 20,
+            "MOOD": 12
+        }
+    },
+    "2427": {
+        "id": 2427,
+        "category": "战斗",
+        "event": "血池深处的血魔残魂循着魔念钻入识海，欲夺舍你的肉身！",
+        "NoRandom": 1,
+        "grade": 4,
+        "battle": {
+            "name": "血魔残魂",
+            "hp": 650,
+            "atk": 28,
+            "elem": "HUO",
+            "res": {
+                "HUO": 7
+            },
+            "win": 2428,
+            "lose": 2429
+        }
+    },
+    "2428": {
+        "id": 2428,
+        "category": "心魔",
+        "event": "你反噬血魔残魂，将其炼作自身魔种。从此杀伐更盛，也更难回头。",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "STR": 5,
+            "CULT": 40,
+            "MOOD": -10
+        }
+    },
+    "2429": {
+        "id": 2429,
+        "category": "心魔",
+        "event": "血魔残魂撕裂识海，你拼尽修为才将其封住，根基遭到重创。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -35,
+            "CULT": -40,
+            "MOOD": -15
+        }
+    },
+    "2430": {
+        "id": 2430,
+        "category": "事务",
+        "event": "丹堂愿替你温养手中的结金丹，剔除一丝驳杂丹毒。",
+        "weight": 7,
+        "grade": 2,
+        "once": 1,
+        "include": "PILL3>0 & STAGE>=9 & STONE>=120",
+        "effect": {
+            "STONE": -120,
+            "MOOD": 8,
+            "MHP": 10
+        }
+    },
+    "2431": {
+        "id": 2431,
+        "category": "心魔",
+        "event": "杀人夺丹之事渐有风声，执法殿暗中查问，你以灵石打点关系才压下疑云。",
+        "weight": 8,
+        "grade": 0,
+        "include": "EVT=2422 & STONE>=80",
+        "effect": {
+            "STONE": -80,
+            "MOOD": -6
+        }
+    },
+    "5101": {
+        "id": 5101,
+        "category": "副本",
+        "event": "你查清了【黑风窟】的位置——魔道据点，危险与机缘并存。",
+        "weight": 8,
+        "grade": 2,
+        "once": 1,
+        "include": "HPP>=20",
+        "choice": {
+            "prompt": "是否独闯黑风窟？",
+            "options": [
+                {
+                    "label": "进入",
+                    "next": 5102
+                },
+                {
+                    "label": "离开",
+                    "next": 5191
+                }
+            ]
+        }
+    },
+    "5102": {
+        "id": 5102,
+        "category": "副本",
+        "event": "你杀入前厅，黑风盗蜂拥而至！",
+        "NoRandom": 1,
+        "grade": 1,
+        "battle": {
+            "name": "黑风盗",
+            "hp": 250,
+            "atk": 18,
+            "elem": "JIN",
+            "human": true,
+            "win": 5103,
+            "lose": 5190,
+            "draw": 5191,
+            "pillDrop": {
+                "pill": "PILL3",
+                "rate": 0.3
+            }
+        }
+    },
+    "5103": {
+        "id": 5103,
+        "category": "副本",
+        "event": "你搜刮了前厅的宝库，另有二品淤血丹一枚。",
+        "NoRandom": 1,
+        "grade": 2,
+        "effect": {
+            "CULT": 15,
+            "STONE": 40,
+            "YXD2": 1
+        },
+        "choice": {
+            "prompt": "继续深入黑风窟？",
+            "options": [
+                {
+                    "label": "继续前进",
+                    "next": 5104
+                },
+                {
+                    "label": "主动撤离",
+                    "next": 5191
+                }
+            ]
+        }
+    },
+    "5104": {
+        "id": 5104,
+        "category": "副本",
+        "event": "黑风二当家持刀拦路！",
+        "NoRandom": 1,
+        "grade": 3,
+        "battle": {
+            "name": "黑风二当家",
+            "hp": 400,
+            "atk": 24,
+            "elem": "HUO",
+            "human": true,
+            "res": {
+                "HUO": 5
+            },
+            "win": 5105,
+            "lose": 5190,
+            "draw": 5191,
+            "pillDrop": {
+                "pill": "PILL3",
+                "rate": 0.3
+            }
+        }
+    },
+    "5105": {
+        "id": 5105,
+        "category": "副本",
+        "event": "你缴获了二当家的私藏，其中有一枚二品回气丹与一张传送符。",
+        "NoRandom": 1,
+        "grade": 3,
+        "effect": {
+            "STONE": 80,
+            "HQD2": 1,
+            "TELE": 1
+        },
+        "choice": {
+            "prompt": "深处传来铁链声响，继续？",
+            "options": [
+                {
+                    "label": "继续前进",
+                    "next": 5110
+                },
+                {
+                    "label": "主动撤离",
+                    "next": 5191
+                }
+            ]
+        }
+    },
+    "5106": {
+        "id": 5106,
+        "category": "副本",
+        "event": "黑风老祖亲自出手！",
+        "NoRandom": 1,
+        "grade": 4,
+        "battle": {
+            "name": "黑风老祖",
+            "hp": 600,
+            "atk": 30,
+            "elem": "SHUI",
+            "human": true,
+            "res": {
+                "SHUI": 8
+            },
+            "win": 5107,
+            "lose": 5190,
+            "draw": 5191,
+            "pillDrop": {
+                "pill": "PILL3",
+                "rate": 0.3
+            }
+        }
+    },
+    "5107": {
+        "id": 5107,
+        "category": "副本",
+        "event": "你荡平黑风窟，夺得镇窟之宝【黑风令】，库房中灵石成箱、一品灵丹赫然在列！",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "ART": 5009,
+            "CULT": 50,
+            "STONE": 200,
+            "YXD1": 1
+        }
+    },
+    "5110": {
+        "id": 5110,
+        "category": "副本",
+        "event": "你经过一间牢房，里面关着一位昏迷的炼丹师，撬开牢锁会耽误些工夫。",
+        "NoRandom": 1,
+        "grade": 2,
+        "choice": {
+            "prompt": "是否放人？",
+            "options": [
+                {
+                    "label": "撬锁救人",
+                    "next": 5111
+                },
+                {
+                    "label": "不管，继续走",
+                    "next": 5112
+                }
+            ]
+        }
+    },
+    "5111": {
+        "id": 5111,
+        "category": "副本",
+        "event": "炼丹师苏醒后感激不尽，将贴身珍藏、视若性命的一枚结金丹赠你！",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "PILL3": 1,
+            "MMP": 8,
+            "MOOD": 5
+        },
+        "next": 5112
+    },
+    "5112": {
+        "id": 5112,
+        "category": "副本",
+        "event": "你寻到一间隐蔽密室，稍作调息，恢复了些状态。",
+        "NoRandom": 1,
+        "grade": 1,
+        "effect": {
+            "HP": 30,
+            "MP": 20
+        },
+        "choice": {
+            "prompt": "最深处魔气滔天，继续？",
+            "options": [
+                {
+                    "label": "继续前进",
+                    "next": 5106
+                },
+                {
+                    "label": "主动撤离",
+                    "next": 5191
+                }
+            ]
+        }
+    },
+    "5190": {
+        "id": 5190,
+        "category": "副本",
+        "event": "你身受重伤，命悬一线！",
+        "NoRandom": 1,
+        "grade": 0,
+        "branch": [
+            "TELE>0:5192",
+            "TELE<1:5193"
+        ]
+    },
+    "5191": {
+        "id": 5191,
+        "category": "副本",
+        "event": "你见好就收，带着收获撤离了黑风窟。",
+        "NoRandom": 1,
+        "grade": 1
+    },
+    "5192": {
+        "id": 5192,
+        "category": "副本",
+        "event": "危急时刻你激发传送符，逃出生天。",
+        "NoRandom": 1,
+        "grade": 1,
+        "effect": {
+            "TELE": -1
+        }
+    },
+    "5193": {
+        "id": 5193,
+        "category": "副本",
+        "event": "你伤重不治，命丧黑风窟。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -9999
+        }
+    },
+    "5301": {
+        "id": 5301,
+        "category": "副本",
+        "event": "你打听到【上古战场遗迹】的坐标，残煞之气中据说藏着古宝。",
+        "weight": 8,
+        "grade": 2,
+        "once": 1,
+        "include": "HPP>=20",
+        "choice": {
+            "prompt": "是否进入上古战场遗迹？",
+            "options": [
+                {
+                    "label": "进入",
+                    "next": 5302
+                },
+                {
+                    "label": "离开",
+                    "next": 5391
+                }
+            ]
+        }
+    },
+    "5302": {
+        "id": 5302,
+        "category": "副本",
+        "event": "你不慎触动古老机关，箭雨迎面袭来！",
+        "NoRandom": 1,
+        "grade": 1,
+        "branch": [
+            "STR>=12:5312",
+            "STR<12:5313"
+        ]
+    },
+    "5303": {
+        "id": 5303,
+        "category": "副本",
+        "event": "一缕战场战魂凝聚成形，持戈向你杀来！",
+        "NoRandom": 1,
+        "grade": 2,
+        "battle": {
+            "name": "战场战魂",
+            "hp": 350,
+            "atk": 20,
+            "elem": "JIN",
+            "win": 5304,
+            "lose": 5390,
+            "draw": 5391
+        }
+    },
+    "5304": {
+        "id": 5304,
+        "category": "副本",
+        "event": "你在残破军帐中休整，收拢散落的军资。",
+        "NoRandom": 1,
+        "grade": 1,
+        "effect": {
+            "HP": 30,
+            "MP": 20,
+            "STONE": 10
+        },
+        "choice": {
+            "prompt": "战意最浓处煞气冲霄，继续？",
+            "options": [
+                {
+                    "label": "继续前进",
+                    "next": 5305
+                },
+                {
+                    "label": "主动撤离",
+                    "next": 5391
+                }
+            ]
+        }
+    },
+    "5305": {
+        "id": 5305,
+        "category": "副本",
+        "event": "大将战魂跨马横刀，拦在古战场核心之前！",
+        "NoRandom": 1,
+        "grade": 4,
+        "battle": {
+            "name": "大将战魂",
+            "hp": 700,
+            "atk": 30,
+            "elem": "TU",
+            "res": {
+                "TU": 8
+            },
+            "win": 5306,
+            "lose": 5390,
+            "draw": 5391
+        }
+    },
+    "5306": {
+        "id": 5306,
+        "category": "副本",
+        "event": "你击败大将战魂，从古战场核心取得宝物【聚灵佩】，另有军资灵石与一品回气丹！",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "ART": 5002,
+            "CULT": 50,
+            "STONE": 150,
+            "HQD1": 1
+        }
+    },
+    "5312": {
+        "id": 5312,
+        "category": "副本",
+        "event": "你身手敏捷，侧身避开机关，毫发无损。",
+        "NoRandom": 1,
+        "grade": 1,
+        "effect": {
+            "CULT": 5
+        },
+        "next": 5303
+    },
+    "5313": {
+        "id": 5313,
+        "category": "副本",
+        "event": "你躲闪不及，被机关所伤，咬牙继续前行。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -15
+        },
+        "next": 5303
+    },
+    "5390": {
+        "id": 5390,
+        "category": "副本",
+        "event": "你身受重伤，命悬一线！",
+        "NoRandom": 1,
+        "grade": 0,
+        "branch": [
+            "TELE>0:5392",
+            "TELE<1:5393"
+        ]
+    },
+    "5391": {
+        "id": 5391,
+        "category": "副本",
+        "event": "你见好就收，带着收获撤离了遗迹。",
+        "NoRandom": 1,
+        "grade": 1
+    },
+    "5392": {
+        "id": 5392,
+        "category": "副本",
+        "event": "危急时刻你激发传送符，逃出生天。",
+        "NoRandom": 1,
+        "grade": 1,
+        "effect": {
+            "TELE": -1
+        }
+    },
+    "5393": {
+        "id": 5393,
+        "category": "副本",
+        "event": "你伤重不治，长眠于古战场。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -9999
+        }
+    },
+    "5401": {
+        "id": 5401,
+        "category": "副本",
+        "event": "你探明【万蛇窟】的方位——此地蛇妖盘踞，窟中蛇蜕、宝材无数。",
+        "weight": 8,
+        "grade": 2,
+        "once": 1,
+        "include": "HPP>=20",
+        "choice": {
+            "prompt": "是否独闯万蛇窟？",
+            "options": [
+                {
+                    "label": "进入",
+                    "next": 5402
+                },
+                {
+                    "label": "离开",
+                    "next": 5491
+                }
+            ]
+        }
+    },
+    "5402": {
+        "id": 5402,
+        "category": "副本",
+        "event": "你踏入窟口，腥风扑面，成群毒蛇倾巢而出！",
+        "NoRandom": 1,
+        "grade": 1,
+        "battle": {
+            "name": "蛇群",
+            "hp": 280,
+            "atk": 18,
+            "elem": "MU",
+            "win": 5403,
+            "lose": 5490,
+            "draw": 5491
+        }
+    },
+    "5403": {
+        "id": 5403,
+        "category": "副本",
+        "event": "你杀散蛇群，收集了一批完好的蛇蜕与一株石缝中的灵草。",
+        "NoRandom": 1,
+        "grade": 2,
+        "effect": {
+            "STONE": 30,
+            "CULT": 10,
+            "HQD2": 1
+        },
+        "choice": {
+            "prompt": "窟道蜿蜒向下，继续深入？",
+            "options": [
+                {
+                    "label": "继续前进",
+                    "next": 5404
+                },
+                {
+                    "label": "主动撤离",
+                    "next": 5491
+                }
+            ]
+        }
+    },
+    "5404": {
+        "id": 5404,
+        "category": "副本",
+        "event": "你寻到一间干燥石室，短暂休整，恢复了些状态。",
+        "NoRandom": 1,
+        "grade": 1,
+        "effect": {
+            "HP": 25,
+            "MP": 15
+        },
+        "choice": {
+            "prompt": "深处传来令人心悸的嘶鸣，继续？",
+            "options": [
+                {
+                    "label": "继续前进",
+                    "next": 5405
+                },
+                {
+                    "label": "主动撤离",
+                    "next": 5491
+                }
+            ]
+        }
+    },
+    "5405": {
+        "id": 5405,
+        "category": "副本",
+        "event": "双头蛇王盘踞在洞窟尽头，两颗头颅同时喷出毒雾！",
+        "NoRandom": 1,
+        "grade": 4,
+        "battle": {
+            "name": "双头蛇王",
+            "hp": 550,
+            "atk": 27,
+            "elem": "MU",
+            "res": {
+                "MU": 6
+            },
+            "win": 5406,
+            "lose": 5490,
+            "draw": 5491
+        }
+    },
+    "5406": {
+        "id": 5406,
+        "category": "副本",
+        "event": "你力斩双头蛇王，在蛇王宝库中寻得【乾坤钱袋】与成堆灵石，另有一品淤血丹一枚！",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "ART": 5005,
+            "CULT": 50,
+            "STONE": 180,
+            "YXD1": 1
+        }
+    },
+    "5490": {
+        "id": 5490,
+        "category": "副本",
+        "event": "你身受重伤，命悬一线！",
+        "NoRandom": 1,
+        "grade": 0,
+        "branch": [
+            "TELE>0:5492",
+            "TELE<1:5493"
+        ]
+    },
+    "5491": {
+        "id": 5491,
+        "category": "副本",
+        "event": "你见好就收，带着收获撤离了万蛇窟。",
+        "NoRandom": 1,
+        "grade": 1
+    },
+    "5492": {
+        "id": 5492,
+        "category": "副本",
+        "event": "危急时刻你激发传送符，逃出生天。",
+        "NoRandom": 1,
+        "grade": 1,
+        "effect": {
+            "TELE": -1
+        }
+    },
+    "5493": {
+        "id": 5493,
+        "category": "副本",
+        "event": "你伤重不治，葬身蛇窟。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -9999
+        }
+    },
+    "5501": {
+        "id": 5501,
+        "category": "副本",
+        "event": "你得到一张残破舆图，指向一座【古修士洞府】，据说府中留有前人传承。",
+        "weight": 8,
+        "grade": 2,
+        "once": 1,
+        "include": "HPP>=20",
+        "choice": {
+            "prompt": "是否探访古修士洞府？",
+            "options": [
+                {
+                    "label": "进入",
+                    "next": 5502
+                },
+                {
+                    "label": "离开",
+                    "next": 5591
+                }
+            ]
+        }
+    },
+    "5502": {
+        "id": 5502,
+        "category": "副本",
+        "event": "洞府门户设有古老机关，你刚靠近，数道寒光激射而来！",
+        "NoRandom": 1,
+        "grade": 1,
+        "branch": [
+            "STR>=14:5512",
+            "STR<14:5513"
+        ]
+    },
+    "5503": {
+        "id": 5503,
+        "category": "副本",
+        "event": "传承大殿四壁刻满前人修行感悟，你驻足研读，获益匪浅。",
+        "NoRandom": 1,
+        "grade": 2,
+        "effect": {
+            "CULT": 20,
+            "MOOD": 3
+        },
+        "choice": {
+            "prompt": "殿后隐约有机括转动之声，继续？",
+            "options": [
+                {
+                    "label": "继续前进",
+                    "next": 5504
+                },
+                {
+                    "label": "主动撤离",
+                    "next": 5591
+                }
+            ]
+        }
+    },
+    "5504": {
+        "id": 5504,
+        "category": "副本",
+        "event": "一尊守府傀儡从阴影中走出，铜臂铁拳，轰然砸落！",
+        "NoRandom": 1,
+        "grade": 3,
+        "battle": {
+            "name": "守府傀儡",
+            "hp": 600,
+            "atk": 26,
+            "elem": "TU",
+            "res": {
+                "TU": 6
+            },
+            "win": 5505,
+            "lose": 5590,
+            "draw": 5591
+        }
+    },
+    "5505": {
+        "id": 5505,
+        "category": "副本",
+        "event": "你击碎傀儡，在丹室中寻得一品淤血丹、一品回气丹各一枚与若干灵石。",
+        "NoRandom": 1,
+        "grade": 3,
+        "effect": {
+            "YXD1": 1,
+            "HQD1": 1,
+            "STONE": 50
+        },
+        "choice": {
+            "prompt": "主室中一道残念正在凝聚，继续？",
+            "options": [
+                {
+                    "label": "继续前进",
+                    "next": 5506
+                },
+                {
+                    "label": "主动撤离",
+                    "next": 5591
+                }
+            ]
+        }
+    },
+    "5506": {
+        "id": 5506,
+        "category": "副本",
+        "event": "府主残念显化人形，一言不发，抬手便是一击！",
+        "NoRandom": 1,
+        "grade": 4,
+        "battle": {
+            "name": "府主残念",
+            "hp": 700,
+            "atk": 30,
+            "elem": "NONE",
+            "win": 5507,
+            "lose": 5590,
+            "draw": 5591
+        }
+    },
+    "5507": {
+        "id": 5507,
+        "category": "副本",
+        "event": "残念散去，露出传承玉匣——府主一生珍藏【紫气丹炉】与满匣灵石尽归你手！",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "ART": 5006,
+            "CULT": 60,
+            "STONE": 200,
+            "TELE": 1
+        }
+    },
+    "5512": {
+        "id": 5512,
+        "category": "副本",
+        "event": "你身法矫健，穿花蝴蝶般避开机关，顺手记下阵纹脉络。",
+        "NoRandom": 1,
+        "grade": 1,
+        "effect": {
+            "CULT": 5
+        },
+        "next": 5503
+    },
+    "5513": {
+        "id": 5513,
+        "category": "副本",
+        "event": "你躲闪不及被寒光划伤，咬牙推开府门。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -15
+        },
+        "next": 5503
+    },
+    "5590": {
+        "id": 5590,
+        "category": "副本",
+        "event": "你身受重伤，命悬一线！",
+        "NoRandom": 1,
+        "grade": 0,
+        "branch": [
+            "TELE>0:5592",
+            "TELE<1:5593"
+        ]
+    },
+    "5591": {
+        "id": 5591,
+        "category": "副本",
+        "event": "你见好就收，带着收获撤离了洞府。",
+        "NoRandom": 1,
+        "grade": 1
+    },
+    "5592": {
+        "id": 5592,
+        "category": "副本",
+        "event": "危急时刻你激发传送符，逃出生天。",
+        "NoRandom": 1,
+        "grade": 1,
+        "effect": {
+            "TELE": -1
+        }
+    },
+    "5593": {
+        "id": 5593,
+        "category": "副本",
+        "event": "你伤重不治，长眠于古洞府中。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -9999
+        }
+    },
+    "5601": {
+        "id": 5601,
+        "category": "副本",
+        "event": "宗门挑选弟子参加【五宗试炼】：五大宗门弟子同入秘境夺旗，生死不论，魁首可入五宗宝库任选一物。",
+        "weight": 6,
+        "grade": 3,
+        "once": 1,
+        "include": "STAGE>=5 & HPP>=20 & POST>=2",
+        "choice": {
+            "prompt": "是否代表宗门出战五宗试炼？（各宗精英云集，极度凶险）",
+            "options": [
+                {
+                    "label": "参加试炼",
+                    "next": 5602
+                },
+                {
+                    "label": "放弃资格",
+                    "next": 5691
+                }
+            ]
+        }
+    },
+    "5602": {
+        "id": 5602,
+        "category": "副本",
+        "event": "秘境之中，你遭遇青云宗弟子截杀，对方剑光如虹！",
+        "NoRandom": 1,
+        "grade": 2,
+        "battle": {
+            "name": "青云宗弟子",
+            "hp": 400,
+            "atk": 23,
+            "elem": "JIN",
+            "human": true,
+            "res": {
+                "JIN": 4
+            },
+            "win": 5603,
+            "lose": 5690,
+            "draw": 5691,
+            "pillDrop": {
+                "pill": "PILL3",
+                "rate": 0.3
+            }
+        }
+    },
+    "5603": {
+        "id": 5603,
+        "category": "副本",
+        "event": "你击溃对手，夺得第一面试炼令旗。",
+        "NoRandom": 1,
+        "grade": 2,
+        "effect": {
+            "STONE": 40,
+            "CULT": 15
+        },
+        "choice": {
+            "prompt": "秘境深处杀声四起，继续争夺？",
+            "options": [
+                {
+                    "label": "继续前进",
+                    "next": 5604
+                },
+                {
+                    "label": "主动撤离",
+                    "next": 5691
+                }
+            ]
+        }
+    },
+    "5604": {
+        "id": 5604,
+        "category": "副本",
+        "event": "你寻得一处隐蔽山洞，调息恢复，静观局势。",
+        "NoRandom": 1,
+        "grade": 1,
+        "effect": {
+            "HP": 30,
+            "MP": 20
+        },
+        "choice": {
+            "prompt": "洞外传来血煞门弟子的狂笑，继续？",
+            "options": [
+                {
+                    "label": "继续前进",
+                    "next": 5605
+                },
+                {
+                    "label": "主动撤离",
+                    "next": 5691
+                }
+            ]
+        }
+    },
+    "5605": {
+        "id": 5605,
+        "category": "副本",
+        "event": "血煞门精英弟子拦路，此人手上已有三条人命，杀气冲天！",
+        "NoRandom": 1,
+        "grade": 3,
+        "battle": {
+            "name": "血煞门精英",
+            "hp": 550,
+            "atk": 27,
+            "elem": "HUO",
+            "human": true,
+            "res": {
+                "HUO": 4
+            },
+            "win": 5606,
+            "lose": 5690,
+            "draw": 5691,
+            "pillDrop": {
+                "pill": "PILL3",
+                "rate": 0.3
+            }
+        }
+    },
+    "5606": {
+        "id": 5606,
+        "category": "副本",
+        "event": "你阵斩血煞门精英，夺得第二面令旗与一枚二品淤血丹。",
+        "NoRandom": 1,
+        "grade": 3,
+        "effect": {
+            "STONE": 60,
+            "YXD2": 1
+        },
+        "choice": {
+            "prompt": "最终擂台上只剩一名守旗者，上前决战？",
+            "options": [
+                {
+                    "label": "上前决战",
+                    "next": 5607
+                },
+                {
+                    "label": "主动撤离",
+                    "next": 5691
+                }
+            ]
+        }
+    },
+    "5607": {
+        "id": 5607,
+        "category": "副本",
+        "event": "守旗者是散修联盟的首领，连败七名各宗弟子，气势如渊！",
+        "NoRandom": 1,
+        "grade": 4,
+        "battle": {
+            "name": "散修首领",
+            "hp": 750,
+            "atk": 32,
+            "elem": "JIN",
+            "human": true,
+            "res": {
+                "JIN": 6
+            },
+            "win": 5608,
+            "lose": 5690,
+            "draw": 5691,
+            "pillDrop": {
+                "pill": "PILL3",
+                "rate": 0.3
+            }
+        }
+    },
+    "5608": {
+        "id": 5608,
+        "category": "副本",
+        "event": "你力挫群雄，五宗试炼夺魁！宝库中你选了【剑穗残片】，五宗另赐灵石三百、一品淤血丹一枚！",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "ART": 5008,
+            "CULT": 80,
+            "STONE": 300,
+            "MOOD": 10,
+            "YXD1": 1
+        }
+    },
+    "5690": {
+        "id": 5690,
+        "category": "副本",
+        "event": "你身受重伤，命悬一线！",
+        "NoRandom": 1,
+        "grade": 0,
+        "branch": [
+            "TELE>0:5692",
+            "TELE<1:5693"
+        ]
+    },
+    "5691": {
+        "id": 5691,
+        "category": "副本",
+        "event": "你见好就收，带着收获退出了试炼。",
+        "NoRandom": 1,
+        "grade": 1
+    },
+    "5692": {
+        "id": 5692,
+        "category": "副本",
+        "event": "危急时刻你激发传送符，逃出生天。",
+        "NoRandom": 1,
+        "grade": 1,
+        "effect": {
+            "TELE": -1
+        }
+    },
+    "5693": {
+        "id": 5693,
+        "category": "副本",
+        "event": "你伤重不治，命丧试炼秘境。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -9999
+        }
+    },
+    "7005": {
+        "id": 7005,
+        "category": "事务",
+        "event": "你在听雨楼以 40 灵石换得《癸水咒》咒文。",
+        "weight": 5,
+        "grade": 2,
+        "once": 1,
+        "include": "STONE>=40",
+        "effect": {
+            "STONE": -40
+        },
+        "next": 7006
+    },
+    "7006": {
+        "id": 7006,
+        "category": "事务",
+        "event": "你练成【癸水咒】！",
+        "NoRandom": 1,
+        "grade": 2,
+        "effect": {
+            "SKL": 3,
+            "SHUI": 1
+        }
+    },
+    "7007": {
+        "id": 7007,
+        "category": "事务",
+        "event": "演武长老见你根基扎实，传你《裂地斩》，代价是完成三次苦役。（修为-30）",
+        "weight": 4,
+        "grade": 3,
+        "once": 1,
+        "effect": {
+            "CULT": -30
+        },
+        "next": 7008
+    },
+    "7008": {
+        "id": 7008,
+        "category": "事务",
+        "event": "你练成【裂地斩】！",
+        "NoRandom": 1,
+        "grade": 3,
+        "effect": {
+            "SKL": 4,
+            "TU": 1
+        }
+    },
+    "7009": {
+        "id": 7009,
+        "category": "历练",
+        "event": "秘境深处，你于万年古树下顿悟《万木朝宗》，耗费寿元感悟。（寿元-5）",
+        "weight": 2,
+        "grade": 4,
+        "once": 1,
+        "effect": {
+            "LSP": -5
+        },
+        "next": 7010
+    },
+    "7010": {
+        "id": 7010,
+        "category": "历练",
+        "event": "你练成【万木朝宗】！",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "SKL": 5,
+            "MU": 2
+        }
+    },
+    "7011": {
+        "id": 7011,
+        "category": "历练",
+        "event": "你在一柄断剑中寻得无字剑谱，以心血浇灌三月，剑谱显现。（气血-30，灵石-50）",
+        "weight": 2,
+        "grade": 4,
+        "once": 1,
+        "include": "STONE>=50",
+        "effect": {
+            "HP": -30,
+            "STONE": -50
+        },
+        "next": 7012
+    },
+    "7012": {
+        "id": 7012,
+        "category": "历练",
+        "event": "你悟透【无名剑诀】！",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "SKL": 6,
+            "STR": 5
+        }
+    }
+}

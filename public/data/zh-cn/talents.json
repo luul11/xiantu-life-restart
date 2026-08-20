@@ -1,0 +1,323 @@
+{
+    "1001": {
+        "id": 1001,
+        "name": "天灵根·金",
+        "description": "金系单灵根，万中无一",
+        "grade": 3,
+        "effect": {
+            "JIN": 3
+        }
+    },
+    "1002": {
+        "id": 1002,
+        "name": "天灵根·木",
+        "description": "木系单灵根，万中无一",
+        "grade": 3,
+        "effect": {
+            "MU": 3
+        }
+    },
+    "1003": {
+        "id": 1003,
+        "name": "天灵根·水",
+        "description": "水系单灵根，万中无一",
+        "grade": 3,
+        "effect": {
+            "SHUI": 3
+        }
+    },
+    "1004": {
+        "id": 1004,
+        "name": "天灵根·火",
+        "description": "火系单灵根，万中无一",
+        "grade": 3,
+        "effect": {
+            "HUO": 3
+        }
+    },
+    "1005": {
+        "id": 1005,
+        "name": "天灵根·土",
+        "description": "土系单灵根，万中无一",
+        "grade": 3,
+        "effect": {
+            "TU": 3
+        }
+    },
+    "1006": {
+        "id": 1006,
+        "name": "剑心通明",
+        "description": "天生剑心，攻伐无双，力量+4",
+        "grade": 3,
+        "effect": {
+            "STR": 4
+        }
+    },
+    "1007": {
+        "id": 1007,
+        "name": "心境澄明",
+        "description": "道心坚定，初始心境+20",
+        "grade": 3,
+        "effect": {
+            "MOOD": 20
+        }
+    },
+    "1008": {
+        "id": 1008,
+        "name": "富家子弟",
+        "description": "出身修仙世家，初始灵石+80",
+        "grade": 3,
+        "effect": {
+            "STONE": 80
+        }
+    },
+    "1009": {
+        "id": 1009,
+        "name": "丹童转世",
+        "description": "前世为炼丹童子，自带一枚筑基丹",
+        "grade": 3,
+        "effect": {
+            "PILL2": 1
+        }
+    },
+    "1011": {
+        "id": 1011,
+        "name": "铜皮铁骨",
+        "description": "筋骨强健，气血上限和初始气血+40",
+        "grade": 2,
+        "effect": {
+            "MHP": 40,
+            "HP": 40
+        }
+    },
+    "1012": {
+        "id": 1012,
+        "name": "神识过人",
+        "description": "神识敏锐，灵力上限和初始灵力+40",
+        "grade": 2,
+        "effect": {
+            "MMP": 40,
+            "MP": 40
+        }
+    },
+    "1013": {
+        "id": 1013,
+        "name": "五行俱全",
+        "description": "五行属性各+1",
+        "grade": 2,
+        "effect": {
+            "JIN": 1,
+            "MU": 1,
+            "SHUI": 1,
+            "HUO": 1,
+            "TU": 1
+        }
+    },
+    "1014": {
+        "id": 1014,
+        "name": "长生种",
+        "description": "寿元绵长，寿元+40",
+        "grade": 2,
+        "effect": {
+            "LSP": 40
+        }
+    },
+    "1016": {
+        "id": 1016,
+        "name": "小有家资",
+        "description": "家中略有积蓄，初始灵石+30",
+        "grade": 2,
+        "effect": {
+            "STONE": 30
+        }
+    },
+    "1017": {
+        "id": 1017,
+        "name": "力大无穷",
+        "description": "天生神力，力量+4",
+        "grade": 2,
+        "effect": {
+            "STR": 4
+        }
+    },
+    "1019": {
+        "id": 1019,
+        "name": "心魔缠身",
+        "description": "心魔扰动，初始心境-15",
+        "grade": 0,
+        "effect": {
+            "MOOD": -15
+        }
+    },
+    "1020": {
+        "id": 1020,
+        "name": "废灵根",
+        "description": "灵根驳杂，初始心境-20",
+        "grade": 0,
+        "effect": {
+            "MOOD": -20
+        }
+    },
+    "1021": {
+        "id": 1021,
+        "name": "玄冰灵体",
+        "description": "水系灵力更易凝练",
+        "grade": 3,
+        "effect": {
+            "SHUI": 2,
+            "MMP": 15
+        }
+    },
+    "1022": {
+        "id": 1022,
+        "name": "烈阳道体",
+        "description": "火行真元炽烈",
+        "grade": 3,
+        "effect": {
+            "HUO": 2,
+            "STR": 2
+        }
+    },
+    "1023": {
+        "id": 1023,
+        "name": "厚土灵台",
+        "description": "根基稳固，气血悠长",
+        "grade": 2,
+        "effect": {
+            "TU": 2,
+            "MHP": 20
+        }
+    },
+    "1024": {
+        "id": 1024,
+        "name": "青木回春",
+        "description": "木行生机绵长",
+        "grade": 2,
+        "effect": {
+            "MU": 2,
+            "LSP": 15
+        }
+    },
+    "1025": {
+        "id": 1025,
+        "name": "金刚之躯",
+        "description": "金行淬体，力量提升",
+        "grade": 2,
+        "effect": {
+            "JIN": 2,
+            "STR": 2
+        }
+    },
+    "1026": {
+        "id": 1026,
+        "name": "悟道灵光",
+        "description": "心境高于70时偶得灵光，修为+25",
+        "grade": 1,
+        "condition": "MOOD>70",
+        "effect": {
+            "CULT": 25
+        }
+    },
+    "1028": {
+        "id": 1028,
+        "name": "炼体根骨",
+        "description": "炼体有成，气血上限和初始气血+20",
+        "grade": 1,
+        "effect": {
+            "MHP": 20,
+            "HP": 20
+        }
+    },
+    "1029": {
+        "id": 1029,
+        "name": "聚气成旋",
+        "description": "聚气成旋，灵力上限和初始灵力+20",
+        "grade": 1,
+        "effect": {
+            "MMP": 20,
+            "MP": 20
+        }
+    },
+    "1030": {
+        "id": 1030,
+        "name": "福缘深厚",
+        "description": "福缘深厚，初始灵石+20",
+        "grade": 1,
+        "effect": {
+            "STONE": 20
+        }
+    },
+    "1031": {
+        "id": 1031,
+        "name": "百毒不侵",
+        "description": "五行根基各有增益",
+        "grade": 1,
+        "effect": {
+            "JIN": 1,
+            "MU": 1,
+            "SHUI": 1,
+            "HUO": 1,
+            "TU": 1
+        }
+    },
+    "1032": {
+        "id": 1032,
+        "name": "逆流而上",
+        "description": "心境低于30时不屈奋起，心境+15",
+        "grade": 0,
+        "condition": "MOOD<30",
+        "effect": {
+            "MOOD": 15
+        }
+    },
+    "1033": {
+        "id": 1033,
+        "name": "凡骨",
+        "description": "资质平凡，但意志坚韧",
+        "grade": 0,
+        "effect": {
+            "STR": 1,
+            "LSP": 10
+        }
+    },
+    "1034": {
+        "id": 1034,
+        "name": "散修经验",
+        "description": "熟悉世道，初始灵石+15",
+        "grade": 0,
+        "effect": {
+            "STONE": 15
+        }
+    },
+    "1035": {
+        "id": 1035,
+        "name": "天命剑胎",
+        "description": "剑道天赋惊世，力量+8、金+4",
+        "grade": 3,
+        "effect": {
+            "STR": 8,
+            "JIN": 4
+        }
+    },
+    "1036": {
+        "id": 1036,
+        "name": "病秧子",
+        "description": "先天体弱，气血上限和初始气血-40，初始心境-10",
+        "grade": 0,
+        "effect": {
+            "MHP": -40,
+            "HP": -40,
+            "MOOD": -10
+        }
+    },
+    "1037": {
+        "id": 1037,
+        "name": "败家子",
+        "description": "挥霍无度，初始灵石-30，初始心境-10",
+        "grade": 0,
+        "effect": {
+            "STONE": -30,
+            "MOOD": -10
+        }
+    }
+}

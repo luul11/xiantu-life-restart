@@ -1,0 +1,82 @@
+{
+    "1": {
+        "id": 1,
+        "name": "烈火剑法",
+        "elem": "HUO",
+        "mp": 10,
+        "base": 15,
+        "grade": 2,
+        "minRealm": 1,
+        "description": "烈火剑气，焚金裂石"
+    },
+    "2": {
+        "id": 2,
+        "name": "庚金剑气",
+        "elem": "JIN",
+        "mp": 15,
+        "base": 20,
+        "grade": 3,
+        "minRealm": 1,
+        "description": "庚金锋锐，无坚不摧"
+    },
+    "3": {
+        "id": 3,
+        "name": "癸水咒",
+        "elem": "SHUI",
+        "mp": 12,
+        "base": 18,
+        "grade": 2,
+        "minRealm": 2,
+        "description": "癸水阴柔，蚀骨销魂"
+    },
+    "4": {
+        "id": 4,
+        "name": "裂地斩",
+        "elem": "TU",
+        "mp": 18,
+        "base": 25,
+        "grade": 3,
+        "minRealm": 2,
+        "description": "一斩裂地，山崩石碎"
+    },
+    "5": {
+        "id": 5,
+        "name": "万木朝宗",
+        "elem": "MU",
+        "mp": 25,
+        "base": 35,
+        "grade": 4,
+        "minRealm": 2,
+        "description": "万木听令，生生不息"
+    },
+    "6": {
+        "id": 6,
+        "name": "无名剑诀",
+        "elem": "NONE",
+        "mp": 30,
+        "base": 60,
+        "grade": 4,
+        "minRealm": 2,
+        "description": "无招无式，唯快不破"
+    },
+    "7": {
+        "id": 7,
+        "name": "紫霄雷诀",
+        "elem": "JIN",
+        "mp": 35,
+        "base": 75,
+        "grade": 4,
+        "minRealm": 3,
+        "description": "紫霄雷动，金丹真火化雷霆"
+    },
+    "8": {
+        "id": 8,
+        "name": "青冥长生诀",
+        "elem": "MU",
+        "mp": 30,
+        "base": 62,
+        "grade": 3,
+        "minRealm": 3,
+        "description": "青木长生，真元绵延不绝"
+    }
+}

@@ -1,0 +1,2098 @@
+{
+    "3001": {
+        "id": 3001,
+        "category": "历练",
+        "event": "你云游四海，心境更上层楼。",
+        "weight": 10,
+        "grade": 1,
+        "effect": {
+            "MOOD": 10,
+            "STONE": 50
+        }
+    },
+    "3002": {
+        "id": 3002,
+        "category": "闭关",
+        "event": "你闭关稳固金丹，根基牢不可破。",
+        "weight": 10,
+        "grade": 0,
+        "effect": {
+            "CULT": 100,
+            "MHP": 30
+        }
+    },
+    "3003": {
+        "id": 3003,
+        "category": "战斗",
+        "event": "外敌来犯，你一力捍卫宗门！",
+        "weight": 6,
+        "grade": 2,
+        "effect": {
+            "HP": -30,
+            "STR": 5,
+            "MOOD": 5
+        }
+    },
+    "3004": {
+        "id": 3004,
+        "category": "机缘",
+        "event": "你在古洞府中寻得一枚元婴丹。",
+        "weight": 4,
+        "grade": 4,
+        "once": 1,
+        "include": "STAGE>=8 & PILL4=0",
+        "effect": {
+            "PILL4": 1,
+            "MOOD": 10
+        }
+    },
+    "3005": {
+        "id": 3005,
+        "category": "宗门",
+        "event": "宗门长老赐下元婴丹，助你冲击元婴。",
+        "weight": 3,
+        "grade": 4,
+        "once": 1,
+        "include": "STAGE>=10 & PILL4=0 & POST>=3",
+        "effect": {
+            "PILL4": 1
+        }
+    },
+    "3010": {
+        "id": 3010,
+        "category": "宗门",
+        "event": "你已结成金丹，被推举为宗门客卿，开始参与长老议事。",
+        "weight": 7,
+        "grade": 2,
+        "once": 1,
+        "include": "POST=2",
+        "effect": {
+            "POST": 1,
+            "STONE": 100,
+            "MOOD": 6
+        }
+    },
+    "3011": {
+        "id": 3011,
+        "category": "宗门",
+        "event": "两座附属灵矿为界碑争执不休，长老会请你出面裁断。",
+        "weight": 8,
+        "grade": 1,
+        "include": "POST>=3",
+        "choice": {
+            "prompt": "如何处置灵矿之争？",
+            "options": [
+                {
+                    "label": "重勘地脉，公平划界",
+                    "next": 3030
+                },
+                {
+                    "label": "偏袒出价更高的一方",
+                    "next": 3031
+                }
+            ]
+        }
+    },
+    "3012": {
+        "id": 3012,
+        "category": "宗门",
+        "event": "护山大阵年久失修，阵堂请你主持更换核心阵盘。",
+        "weight": 7,
+        "grade": 2,
+        "include": "POST>=3 & STONE>=150",
+        "effect": {
+            "STONE": -150,
+            "CULT": 50,
+            "MMP": 20
+        }
+    },
+    "3013": {
+        "id": 3013,
+        "category": "宗门",
+        "event": "门下两名真传为争夺洞府私斗，双双闹到你的殿前。",
+        "weight": 8,
+        "grade": 1,
+        "include": "POST>=3",
+        "effect": {
+            "MOOD": -5,
+            "CULT": 20
+        }
+    },
+    "3014": {
+        "id": 3014,
+        "category": "宗门",
+        "event": "宗门商路遭劫，你带队清剿盘踞山道的散修盟。",
+        "weight": 6,
+        "grade": 3,
+        "include": "POST>=2",
+        "battle": {
+            "name": "散修盟主",
+            "hp": 900,
+            "atk": 38,
+            "elem": "JIN",
+            "human": true,
+            "res": {
+                "JIN": 8
+            },
+            "win": 3032,
+            "lose": 3033,
+            "pillDrop": {
+                "pill": "PILL4",
+                "rate": 0.2
+            }
+        }
+    },
+    "3015": {
+        "id": 3015,
+        "category": "丹药",
+        "event": "丹盟拍卖一枚元婴丹，各方元后修士竞价，最终落槌六千灵石。",
+        "weight": 7,
+        "grade": 4,
+        "include": "STAGE>=8 & PILL4=0 & STONE>=6000",
+        "effect": {
+            "STONE": -6000,
+            "PILL4": 1
+        }
+    },
+    "3016": {
+        "id": 3016,
+        "category": "丹药",
+        "event": "丹堂准备开炉炼制元婴丹，尚缺雷劫木心，愿以一枚成丹酬谢。",
+        "weight": 10,
+        "grade": 4,
+        "include": "STAGE>=8 & PILL4=0",
+        "choice": {
+            "prompt": "是否前往雷泽取木心？",
+            "options": [
+                {
+                    "label": "前往雷泽",
+                    "next": 3034
+                },
+                {
+                    "label": "放弃"
+                }
+            ]
+        }
+    },
+    "3017": {
+        "id": 3017,
+        "category": "丹药",
+        "event": "你请丹道宗师以婴火温养元婴丹，使药力与自身金丹气息相合。",
+        "weight": 7,
+        "grade": 3,
+        "once": 1,
+        "include": "PILL4>0 & STAGE>=9 & STONE>=300",
+        "effect": {
+            "STONE": -300,
+            "CULT": 80,
+            "MOOD": 10
+        }
+    },
+    "3018": {
+        "id": 3018,
+        "category": "心魔",
+        "event": "筑基时种下的魔念并未随结丹消散，反而借金丹之力化作血影，夜夜向你索命。",
+        "weight": 9,
+        "grade": 3,
+        "once": 1,
+        "include": "EVT=2422",
+        "choice": {
+            "prompt": "如何处置血影？",
+            "options": [
+                {
+                    "label": "以金丹镇压",
+                    "next": 3037
+                },
+                {
+                    "label": "接纳血影",
+                    "next": 3038
+                }
+            ]
+        }
+    },
+    "3019": {
+        "id": 3019,
+        "category": "血魔",
+        "event": "血魔之名传遍诸州，旧日宗门要求你交出邪法、自废修为。",
+        "weight": 8,
+        "grade": 4,
+        "once": 1,
+        "include": "EVT=3040",
+        "choice": {
+            "prompt": "如何回应宗门最后通牒？",
+            "options": [
+                {
+                    "label": "回山请罪",
+                    "next": 3042
+                },
+                {
+                    "label": "血洗来使",
+                    "next": 3043
+                }
+            ]
+        }
+    },
+    "3020": {
+        "id": 3020,
+        "category": "宗门",
+        "event": "宗门宝库核账时发现大笔灵石去向不明，掌教请你彻查内鬼。",
+        "weight": 6,
+        "grade": 2,
+        "include": "POST>=3",
+        "battle": {
+            "name": "叛宗长老",
+            "hp": 1000,
+            "atk": 40,
+            "elem": "TU",
+            "human": true,
+            "res": {
+                "TU": 9
+            },
+            "win": 3044,
+            "lose": 3045,
+            "pillDrop": {
+                "pill": "PILL4",
+                "rate": 0.2
+            }
+        }
+    },
+    "3030": {
+        "id": 3030,
+        "category": "宗门",
+        "event": "你重勘地脉、公示账册，两家心服口服，宗门威望大涨。",
+        "NoRandom": 1,
+        "grade": 3,
+        "effect": {
+            "CULT": 30,
+            "MOOD": 8
+        }
+    },
+    "3031": {
+        "id": 3031,
+        "category": "宗门",
+        "event": "你暗中收下厚礼，强行改划界碑。此事虽平，宗门内却多了些流言。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "STONE": 180,
+            "MOOD": -8
+        }
+    },
+    "3032": {
+        "id": 3032,
+        "category": "宗门",
+        "event": "你斩杀散修盟主，重开商路，宗门将追回的货物分你一成。",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "STONE": 260,
+            "CULT": 70,
+            "MOOD": 5
+        }
+    },
+    "3033": {
+        "id": 3033,
+        "category": "宗门",
+        "event": "散修盟设伏重创队伍，商路被迫封闭，你也颜面受损。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -40,
+            "MOOD": -10
+        }
+    },
+    "3034": {
+        "id": 3034,
+        "category": "战斗",
+        "event": "你刚取下雷劫木心，盘踞雷泽的夔兽踏雷而来！",
+        "NoRandom": 1,
+        "grade": 4,
+        "battle": {
+            "name": "雷泽夔兽",
+            "hp": 1100,
+            "atk": 42,
+            "elem": "JIN",
+            "res": {
+                "JIN": 10
+            },
+            "win": 3035,
+            "lose": 3036
+        }
+    },
+    "3035": {
+        "id": 3035,
+        "category": "丹药",
+        "event": "丹堂以雷劫木心开炉百日，丹云覆山，依约赠你一枚元婴丹。",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "PILL4": 1,
+            "CULT": 50,
+            "MOOD": 8
+        }
+    },
+    "3036": {
+        "id": 3036,
+        "category": "战斗",
+        "event": "雷霆贯体，你未能取得木心，只得重伤遁离雷泽。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -50,
+            "MOOD": -8
+        }
+    },
+    "3037": {
+        "id": 3037,
+        "category": "心魔",
+        "event": "你以金丹真火灼烧血影七七四十九日，魔念暂伏，金丹也黯淡几分。",
+        "NoRandom": 1,
+        "grade": 2,
+        "effect": {
+            "CULT": -80,
+            "MOOD": 15
+        }
+    },
+    "3038": {
+        "id": 3038,
+        "category": "心魔",
+        "event": "你主动与血影相融，昔日血魔残魂循机苏醒，献上一部血炼邪法。",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "STR": 6,
+            "MHP": 30,
+            "MOOD": -20
+        },
+        "next": 3039
+    },
+    "3039": {
+        "id": 3039,
+        "category": "战斗",
+        "event": "修仙盟追查连年血案，三名金丹执法使联手围住你的洞府！",
+        "NoRandom": 1,
+        "grade": 4,
+        "battle": {
+            "name": "修仙盟执法使",
+            "hp": 1200,
+            "atk": 44,
+            "elem": "SHUI",
+            "human": true,
+            "res": {
+                "SHUI": 10
+            },
+            "win": 3040,
+            "lose": 3041,
+            "pillDrop": {
+                "pill": "PILL4",
+                "rate": 0.2
+            }
+        }
+    },
+    "3040": {
+        "id": 3040,
+        "category": "血魔",
+        "event": "你浴血杀出重围，自号血魔。正道将你列为头号魔修，天下再无容身之地。",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "STR": 8,
+            "CULT": 120,
+            "MOOD": -15,
+            "STONE": 200
+        }
+    },
+    "3041": {
+        "id": 3041,
+        "category": "血魔",
+        "event": "执法使击碎你的护体血影，你燃烧金丹遁逃，修为根基几近崩毁。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -60,
+            "CULT": -150,
+            "MOOD": -20
+        }
+    },
+    "3042": {
+        "id": 3042,
+        "category": "血魔",
+        "event": "你散去血气、回山受缚。宗门封禁你百年，以期洗去一身魔性。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "CULT": -200,
+            "STR": -5,
+            "MOOD": 10
+        }
+    },
+    "3043": {
+        "id": 3043,
+        "category": "血魔",
+        "event": "你斩尽来使，以鲜血祭炼金丹，彻底断绝了回头之路。",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "CULT": 180,
+            "STR": 5,
+            "MOOD": -15
+        }
+    },
+    "3044": {
+        "id": 3044,
+        "category": "宗门",
+        "event": "你拿下叛宗长老，追回失窃灵石，掌教将其中一部分赏给你。",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "STONE": 300,
+            "MOOD": 6
+        }
+    },
+    "3045": {
+        "id": 3045,
+        "category": "宗门",
+        "event": "叛宗长老毁去账册远遁，你承担失察之责，被罚去一年俸禄。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "STONE": -120,
+            "MOOD": -8
+        }
+    },
+    "3046": {
+        "id": 3046,
+        "category": "闭关",
+        "event": "你引紫霄雷气入丹，悟得紫霄雷诀。",
+        "weight": 8,
+        "grade": 4,
+        "once": 1,
+        "skill": 7,
+        "include": "STAGE>=2 & SKL!=7",
+        "effect": {
+            "SKL": 7,
+            "CULT": 100,
+            "JIN": 4,
+            "MMP": 30
+        }
+    },
+    "3047": {
+        "id": 3047,
+        "category": "闭关",
+        "event": "你观青木灵脉枯荣，悟得青冥长生诀。",
+        "weight": 8,
+        "grade": 3,
+        "once": 1,
+        "skill": 8,
+        "include": "STAGE>=4 & SKL!=8",
+        "effect": {
+            "SKL": 8,
+            "CULT": 90,
+            "MU": 4,
+            "MHP": 40,
+            "HP": 40
+        }
+    },
+    "3048": {
+        "id": 3048,
+        "category": "炼体",
+        "event": "金丹真火反复淬炼肉身，你的体魄更进一步。",
+        "weight": 8,
+        "grade": 3,
+        "once": 1,
+        "include": "STAGE>=3",
+        "effect": {
+            "MHP": 50,
+            "HP": 50,
+            "STR": 4
+        }
+    },
+    "3049": {
+        "id": 3049,
+        "category": "丹药",
+        "event": "你以金丹真火开炉，炼成三品回气丹。",
+        "weight": 8,
+        "grade": 2,
+        "once": 1,
+        "include": "STAGE>=2",
+        "effect": {
+            "HQD1": 1,
+            "HQD2": 2,
+            "MMP": 25
+        }
+    },
+    "3050": {
+        "id": 3050,
+        "category": "修炼",
+        "event": "你以金丹统御五行，五行灵根同时增长。",
+        "weight": 6,
+        "grade": 3,
+        "once": 1,
+        "include": "STAGE>=5",
+        "effect": {
+            "JIN": 3,
+            "MU": 3,
+            "SHUI": 3,
+            "HUO": 3,
+            "TU": 3,
+            "MOOD": 8
+        }
+    },
+    "3051": {
+        "id": 3051,
+        "category": "历练",
+        "event": "你深入十万大山，斩杀妖兽无数，获得大量灵材。",
+        "weight": 8,
+        "grade": 2,
+        "effect": {
+            "STONE": 150,
+            "CULT": 30
+        }
+    },
+    "3052": {
+        "id": 3052,
+        "category": "闭关",
+        "event": "你参悟典籍，对天地法则的理解加深。",
+        "weight": 7,
+        "grade": 1,
+        "effect": {
+            "CULT": 80
+        }
+    },
+    "3053": {
+        "id": 3053,
+        "category": "战斗",
+        "event": "一名邪修觊觎你的金丹，发起暗杀！",
+        "weight": 6,
+        "grade": 3,
+        "battle": {
+            "name": "金丹邪修",
+            "hp": 800,
+            "atk": 45,
+            "elem": "SHUI",
+            "win": 3063,
+            "lose": 3064
+        }
+    },
+    "3054": {
+        "id": 3054,
+        "category": "炼丹",
+        "event": "你在丹道上有所突破，炼出了数枚珍贵丹药。",
+        "weight": 5,
+        "grade": 3,
+        "effect": {
+            "STONE": 200,
+            "HQD1": 1,
+            "HQD2": 1
+        }
+    },
+    "3055": {
+        "id": 3055,
+        "category": "游历",
+        "event": "你游历天下，见识大增，心境平和。",
+        "weight": 6,
+        "grade": 2,
+        "effect": {
+            "MOOD": 15,
+            "STONE": 50
+        }
+    },
+    "3056": {
+        "id": 3056,
+        "category": "宗门",
+        "event": "宗门大比，你力压群雄，威望大增。",
+        "weight": 5,
+        "grade": 3,
+        "effect": {
+            "MOOD": 10,
+            "STONE": 100
+        }
+    },
+    "3057": {
+        "id": 3057,
+        "category": "机缘",
+        "event": "你发现了一处上古遗迹，获得了残破功法。",
+        "weight": 4,
+        "grade": 4,
+        "once": 1,
+        "effect": {
+            "CULT": 150,
+            "STR": 2
+        }
+    },
+    "3058": {
+        "id": 3058,
+        "category": "心魔",
+        "event": "修炼中你差点走火入魔，幸而及时定力。",
+        "weight": 5,
+        "grade": 1,
+        "effect": {
+            "MOOD": -10,
+            "HP": -30
+        }
+    },
+    "3059": {
+        "id": 3059,
+        "category": "炼体",
+        "event": "你以秘法淬炼肉身，强度大增。",
+        "weight": 6,
+        "grade": 2,
+        "effect": {
+            "MHP": 40,
+            "STR": 3
+        }
+    },
+    "3060": {
+        "id": 3060,
+        "category": "心魔",
+        "event": "元婴天劫降临，心魔化作万丈天魔拦在识海之中！",
+        "NoRandom": 1,
+        "grade": 4,
+        "battle": {
+            "name": "元婴心魔",
+            "hp": 1600,
+            "atk": 52,
+            "elem": "NONE",
+            "win": 3062,
+            "lose": 3061
+        }
+    },
+    "3061": {
+        "id": 3061,
+        "category": "心魔",
+        "event": "心魔反噬，你冲击元婴失败，金丹根基尽数化为乌有。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "MOOD": -20
+        }
+    },
+    "3062": {
+        "id": 3062,
+        "category": "心魔",
+        "event": "你斩灭元婴心魔，识海澄明，终于窥见长生大道。",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "MOOD": 20
+        }
+    },
+    "3063": {
+        "id": 3063,
+        "category": "战斗",
+        "event": "你反杀邪修，夺得其储物袋。",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "STONE": 300,
+            "CULT": 50
+        }
+    },
+    "3064": {
+        "id": 3064,
+        "category": "战斗",
+        "event": "你不敌邪修，重伤逃回。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -60,
+            "MOOD": -10
+        }
+    },
+    "3070": {
+        "id": 3070,
+        "category": "宗门",
+        "event": "宗门新收了一批年轻弟子，你作为长老负责指导他们修炼，教导之余自身也有所感悟。",
+        "weight": 6,
+        "grade": 3,
+        "effect": {
+            "CULT": 80,
+            "MOOD": 8
+        }
+    },
+    "3071": {
+        "id": 3071,
+        "category": "宗门",
+        "event": "宗门试炼大比，你坐镇后台，见证新一代弟子崛起。",
+        "weight": 5,
+        "grade": 2,
+        "effect": {
+            "CULT": 40,
+            "MOOD": 5
+        }
+    },
+    "3072": {
+        "id": 3072,
+        "category": "宗门",
+        "event": "叛徒勾结魔道，你亲自出手清理门户，威震全宗。",
+        "weight": 4,
+        "grade": 4,
+        "battle": {
+            "name": "叛徒长老",
+            "hp": 1500,
+            "atk": 48,
+            "elem": "SHUI",
+            "human": true,
+            "res": {
+                "SHUI": 12
+            },
+            "win": 3080,
+            "lose": 3081,
+            "pillDrop": {
+                "pill": "PILL4",
+                "rate": 0.3
+            }
+        }
+    },
+    "3073": {
+        "id": 3073,
+        "category": "管理",
+        "event": "宗门议事，你力排众议推动灵矿扩建，虽然耗资巨大，但长远来看大有裨益。",
+        "weight": 5,
+        "grade": 3,
+        "include": "STONE>=2000",
+        "effect": {
+            "STONE": 500,
+            "CULT": 120
+        }
+    },
+    "3074": {
+        "id": 3074,
+        "category": "管理",
+        "event": "你发现了一处废弃的上古洞府的线索，需要大量灵石派遣弟子探索。",
+        "weight": 4,
+        "grade": 4,
+        "include": "STONE>=5000",
+        "effect": {
+            "STONE": -5000,
+            "STR": 4,
+            "CULT": 80
+        }
+    },
+    "3080": {
+        "id": 3080,
+        "category": "战斗",
+        "event": "叛徒伏诛，你夺回了失窃的宗门至宝。",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "STONE": 500,
+            "STR": 2,
+            "MOOD": 5
+        }
+    },
+    "3081": {
+        "id": 3081,
+        "category": "战斗",
+        "event": "叛徒虽被击杀，但你也受了些内伤。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -50,
+            "MOOD": -5
+        }
+    },
+    "3082": {
+        "id": 3082,
+        "category": "战斗",
+        "event": "魔道巨擘“血屠”重现江湖，屠戮数个门派，修仙界震动。",
+        "weight": 3,
+        "grade": 4,
+        "battle": {
+            "name": "魔道巨擘·血屠",
+            "hp": 3500,
+            "atk": 65,
+            "elem": "HUO",
+            "human": true,
+            "res": {
+                "HUO": 15
+            },
+            "win": 3083,
+            "lose": 3084,
+            "pillDrop": {
+                "pill": "PILL4",
+                "rate": 0.5
+            }
+        }
+    },
+    "3083": {
+        "id": 3083,
+        "category": "战斗",
+        "event": "你击败了血屠，名震修仙界，正道视你为擎天柱。",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "STONE": 1000,
+            "STR": 8,
+            "CULT": 200,
+            "MOOD": 20
+        }
+    },
+    "3084": {
+        "id": 3084,
+        "category": "战斗",
+        "event": "你败于血屠之手，重伤逃回，正道士气大跌。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -100,
+            "CULT": -100,
+            "MOOD": -20
+        }
+    },
+    "3090": {
+        "id": 3090,
+        "category": "珍宝",
+        "event": "拍卖行惊现“九转金丹”，传闻服下可重塑根骨，你一掷千金拍下。",
+        "weight": 3,
+        "grade": 4,
+        "include": "STONE>=10000",
+        "effect": {
+            "STONE": -10000,
+            "PILL3": 1,
+            "MOOD": 15
+        }
+    },
+    "3091": {
+        "id": 3091,
+        "category": "珍宝",
+        "event": "你购入一件先天法器“诛仙剑”，威力无穷。",
+        "weight": 3,
+        "grade": 4,
+        "include": "STONE>=8000",
+        "effect": {
+            "STONE": -8000,
+            "STR": 6,
+            "JIN": 4
+        }
+    },
+    "3092": {
+        "id": 3092,
+        "category": "炼丹",
+        "event": "你闭关三月，以海量资源炼成极品回气丹与护身丹。",
+        "weight": 5,
+        "grade": 3,
+        "include": "STONE>=3000",
+        "effect": {
+            "STONE": -3000,
+            "HQD1": 3,
+            "HQD2": 2,
+            "MMP": 15
+        }
+    },
+    "3093": {
+        "id": 3093,
+        "category": "炼体",
+        "event": "你进行了一次代价高昂的炼体秘法，体魄大增。",
+        "weight": 4,
+        "grade": 3,
+        "include": "STONE>=2000",
+        "effect": {
+            "STONE": -2000,
+            "MHP": 80,
+            "STR": 5
+        }
+    },
+    "3094": {
+        "id": 3094,
+        "category": "投资",
+        "event": "你投资了一项新兴的灵材生意，利润丰厚。",
+        "weight": 4,
+        "grade": 3,
+        "include": "STONE>=4000",
+        "effect": {
+            "STONE": 8000
+        }
+    },
+    "3095": {
+        "id": 3095,
+        "category": "修炼",
+        "event": "你参悟了一部上古典籍，对大道的理解更加深刻。",
+        "weight": 6,
+        "grade": 2,
+        "effect": {
+            "CULT": 100,
+            "MOOD": 10
+        }
+    },
+    "3096": {
+        "id": 3096,
+        "category": "炼丹",
+        "event": "你偶然得到一份单方，炼出了几炉灵丹。",
+        "weight": 5,
+        "grade": 2,
+        "effect": {
+            "HQD1": 2,
+            "MOOD": 5
+        }
+    },
+    "3100": {
+        "id": 3100,
+        "category": "历练",
+        "event": "你深入九幽冥渊，斩杀众多邪祟，获得大量鬼修秘法。",
+        "weight": 4,
+        "grade": 3,
+        "effect": {
+            "CULT": 120,
+            "MOOD": -5
+        }
+    },
+    "3101": {
+        "id": 3101,
+        "category": "机缘",
+        "event": "你在东海发现一处龙宫遗迹，获得了龙族传承。",
+        "weight": 2,
+        "grade": 4,
+        "once": 1,
+        "effect": {
+            "SHUI": 6,
+            "CULT": 150
+        }
+    },
+    "3102": {
+        "id": 3102,
+        "category": "挑战",
+        "event": "你接受了散修联盟的挑战，以金丹巅峰之躯对抗元婴初期高手！",
+        "weight": 2,
+        "grade": 4,
+        "battle": {
+            "name": "元婴初期散修",
+            "hp": 2500,
+            "atk": 55,
+            "elem": "JIN",
+            "human": true,
+            "res": {
+                "JIN": 10
+            },
+            "win": 3103,
+            "lose": 3104,
+            "pillDrop": {
+                "pill": "PILL4",
+                "rate": 0.3
+            }
+        }
+    },
+    "3103": {
+        "id": 3103,
+        "category": "挑战",
+        "event": "你越级斩敌，声名鹊起，各方势力纷纷示好。",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "STONE": 600,
+            "CULT": 180,
+            "MOOD": 15
+        }
+    },
+    "3104": {
+        "id": 3104,
+        "category": "挑战",
+        "event": "你不敌元婴高手，险些陨落，立下誓要再踏仙途。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -80,
+            "CULT": -150,
+            "MOOD": -15
+        }
+    },
+    "3110": {
+        "id": 3110,
+        "category": "宗门",
+        "event": "宗门召开长老会议，商讨灵脉分配事宜，你据理力争，为弟子谋得福利。",
+        "weight": 5,
+        "grade": 2,
+        "effect": {
+            "MOOD": 5,
+            "CULT": 30
+        }
+    },
+    "3111": {
+        "id": 3111,
+        "category": "宗门",
+        "event": "你主持了一场宗门内的炼丹大比，选拔出了几位丹道好苗子。",
+        "weight": 5,
+        "grade": 2,
+        "effect": {
+            "CULT": 40,
+            "STONE": 100
+        }
+    },
+    "3112": {
+        "id": 3112,
+        "category": "宗门",
+        "event": "你发现有弟子偷学禁术，经过一番审问，决定给其一次改过机会。",
+        "weight": 4,
+        "grade": 2,
+        "effect": {
+            "MOOD": -5,
+            "CULT": 50
+        }
+    },
+    "3113": {
+        "id": 3113,
+        "category": "宗门",
+        "event": "你巡查宗门下属的凡俗产业，发现有人中饱私囊，当场震怒。",
+        "weight": 4,
+        "grade": 1,
+        "effect": {
+            "MOOD": -8,
+            "STONE": 200
+        }
+    },
+    "3114": {
+        "id": 3114,
+        "category": "宗门",
+        "event": "你为宗门立下新规矩，提倡节俭修炼，反对铺张浪费。",
+        "weight": 5,
+        "grade": 2,
+        "effect": {
+            "MOOD": 10,
+            "CULT": 40
+        }
+    },
+    "3120": {
+        "id": 3120,
+        "category": "修炼",
+        "event": "你参悟了一段古老的功法残篇，对金丹大道有了新的理解。",
+        "weight": 6,
+        "grade": 2,
+        "effect": {
+            "CULT": 120
+        }
+    },
+    "3121": {
+        "id": 3121,
+        "category": "修炼",
+        "event": "你在修炼中突破了一个小瓶颈，金丹品质提升。",
+        "weight": 5,
+        "grade": 3,
+        "effect": {
+            "MHP": 50,
+            "MMP": 30
+        }
+    },
+    "3122": {
+        "id": 3122,
+        "category": "修炼",
+        "event": "你尝试将五行功法融合，虽然失败了，但获得了宝贵经验。",
+        "weight": 4,
+        "grade": 1,
+        "effect": {
+            "CULT": 60,
+            "MOOD": -5
+        }
+    },
+    "3123": {
+        "id": 3123,
+        "category": "闭关",
+        "event": "你闭关一年，金丹品质大成，寿元大增。",
+        "weight": 4,
+        "grade": 3,
+        "include": "STONE>=1000",
+        "effect": {
+            "STONE": -1000,
+            "MHP": 100,
+            "CULT": 150
+        }
+    },
+    "3124": {
+        "id": 3124,
+        "category": "闭关",
+        "event": "你在闭关中感悟到一丝天地法则的波动。",
+        "weight": 5,
+        "grade": 2,
+        "effect": {
+            "CULT": 80,
+            "MOOD": 10
+        }
+    },
+    "3135": {
+        "id": 3135,
+        "category": "炼丹",
+        "event": "你研究出了一种新的丹药配方，能大幅提升灵力恢复速度。",
+        "weight": 4,
+        "grade": 3,
+        "include": "STONE>=500",
+        "effect": {
+            "STONE": -500,
+            "HQD3": 2,
+            "MMP": 10
+        }
+    },
+    "3136": {
+        "id": 3136,
+        "category": "炼丹",
+        "event": "你炼出了一批高品质的疗伤丹，受到宗门上下好评。",
+        "weight": 5,
+        "grade": 2,
+        "effect": {
+            "HQD1": 3,
+            "MOOD": 5
+        }
+    },
+    "3137": {
+        "id": 3137,
+        "category": "炼体",
+        "event": "你尝试了一种极端的炼体之法，虽然危险但效果显著。",
+        "weight": 3,
+        "grade": 2,
+        "include": "STONE>=800",
+        "effect": {
+            "STONE": -800,
+            "HP": -20,
+            "MHP": 60,
+            "STR": 4
+        }
+    },
+    "3138": {
+        "id": 3138,
+        "category": "炼体",
+        "event": "你以金丹之力淬炼经脉，身体素质全面提升。",
+        "weight": 5,
+        "grade": 2,
+        "effect": {
+            "MHP": 40,
+            "STR": 3
+        }
+    },
+    "3139": {
+        "id": 3139,
+        "category": "炼体",
+        "event": "你发现了一种温和的炼体方式，适合日常修炼。",
+        "weight": 6,
+        "grade": 1,
+        "effect": {
+            "MHP": 25
+        }
+    },
+    "3150": {
+        "id": 3150,
+        "category": "战斗",
+        "event": "一伙劫匪盯上了你，你三下五除二将其制服。",
+        "weight": 5,
+        "grade": 1,
+        "effect": {
+            "STR": 2,
+            "MOOD": 5
+        }
+    },
+    "3151": {
+        "id": 3151,
+        "category": "战斗",
+        "event": "你遇到一位志同道合的散修，切磋技艺后惺惺相惜。",
+        "weight": 4,
+        "grade": 2,
+        "effect": {
+            "CULT": 40,
+            "MOOD": 8
+        }
+    },
+    "3152": {
+        "id": 3152,
+        "category": "历练",
+        "event": "你游历了西域诸国，见识了不同的修炼体系。",
+        "weight": 4,
+        "grade": 2,
+        "effect": {
+            "CULT": 60,
+            "MOOD": 10,
+            "STONE": 100
+        }
+    },
+    "3153": {
+        "id": 3153,
+        "category": "历练",
+        "event": "你在一处秘境中获得了一块万年灵石，价值连城。",
+        "weight": 3,
+        "grade": 3,
+        "effect": {
+            "STONE": 2000,
+            "MOOD": 15
+        }
+    },
+    "3154": {
+        "id": 3154,
+        "category": "历练",
+        "event": "你深入蛮荒之地，与上古凶兽搏斗，获得其内丹。",
+        "weight": 3,
+        "grade": 3,
+        "effect": {
+            "STR": 5,
+            "CULT": 80,
+            "HP": -40
+        }
+    },
+    "3155": {
+        "id": 3155,
+        "category": "游历",
+        "event": "你拜访了一位隐世高人，对方指点了你几句。",
+        "weight": 4,
+        "grade": 3,
+        "effect": {
+            "CULT": 100,
+            "MOOD": 10
+        }
+    },
+    "3165": {
+        "id": 3165,
+        "category": "机缘",
+        "event": "你偶然拾得一枚玉简，上面记载了一门失传的功法。",
+        "weight": 3,
+        "grade": 4,
+        "once": 1,
+        "effect": {
+            "CULT": 200,
+            "MOOD": 15
+        }
+    },
+    "3166": {
+        "id": 3166,
+        "category": "机缘",
+        "event": "你感应到天地异象，顺着感应找到了一处福地。",
+        "weight": 2,
+        "grade": 4,
+        "effect": {
+            "SHUI": 4,
+            "CULT": 120
+        }
+    },
+    "3167": {
+        "id": 3167,
+        "category": "珍宝",
+        "event": "你在黑市中发现一件古代仙器，虽然破损但价值极高。",
+        "weight": 3,
+        "grade": 4,
+        "include": "STONE>=6000",
+        "effect": {
+            "STONE": -6000,
+            "STR": 5,
+            "MOOD": 10
+        }
+    },
+    "3168": {
+        "id": 3168,
+        "category": "珍宝",
+        "event": "你购得一颗金丹期灵兽蛋，有望培育出强大战力。",
+        "weight": 3,
+        "grade": 3,
+        "include": "STONE>=5000",
+        "effect": {
+            "STONE": -5000,
+            "MOOD": 20,
+            "STR": 3
+        }
+    },
+    "3169": {
+        "id": 3169,
+        "category": "投资",
+        "event": "你投资了一处新发现的灵矿，预计未来收益可观。",
+        "weight": 4,
+        "grade": 3,
+        "include": "STONE>=3000",
+        "effect": {
+            "STONE": 6000
+        }
+    },
+    "3175": {
+        "id": 3175,
+        "category": "心魔",
+        "event": "你在修炼中感到心神不宁，似乎有心魔蠢动。",
+        "weight": 5,
+        "grade": 1,
+        "effect": {
+            "MOOD": -15
+        }
+    },
+    "3176": {
+        "id": 3176,
+        "category": "心魔",
+        "event": "你做了一个噩梦，梦中自己走火入魔。",
+        "weight": 4,
+        "grade": 1,
+        "effect": {
+            "MOOD": -10,
+            "HP": -10
+        }
+    },
+    "3177": {
+        "id": 3177,
+        "category": "丹药",
+        "event": "你需要服用大量丹药来维持修炼状态，消耗不小。",
+        "weight": 5,
+        "grade": 1,
+        "include": "STONE>=500",
+        "effect": {
+            "STONE": -500,
+            "MHP": 10
+        }
+    },
+    "3178": {
+        "id": 3178,
+        "category": "丹药",
+        "event": "你获得了一批珍贵丹药，储备大增。",
+        "weight": 4,
+        "grade": 2,
+        "effect": {
+            "HQD1": 2,
+            "HQD2": 1
+        }
+    },
+    "3179": {
+        "id": 3179,
+        "category": "挑战",
+        "event": "你接受了宗门的考验，通过了一项极限挑战。",
+        "weight": 3,
+        "grade": 3,
+        "effect": {
+            "CULT": 100,
+            "MOOD": 15,
+            "STR": 3
+        }
+    },
+    "3185": {
+        "id": 3185,
+        "category": "阴谋",
+        "event": "你暗中使绊子，让一位与你竞争的长老在宗门大比中出丑，对方威望大跌。",
+        "weight": 4,
+        "grade": 2,
+        "effect": {
+            "MOOD": -10,
+            "CULT": 30
+        }
+    },
+    "3186": {
+        "id": 3186,
+        "category": "阴谋",
+        "event": "你设计陷害一位同门长老，让他背上了勾结魔道的黑锅，被宗门废去修为。",
+        "weight": 2,
+        "grade": 0,
+        "battle": {
+            "name": "被陷害的长老",
+            "hp": 800,
+            "atk": 35,
+            "elem": "TUI",
+            "human": true,
+            "res": {
+                "TUI": 8
+            },
+            "win": 3187,
+            "lose": 3188,
+            "pillDrop": {
+                "pill": "PILL4",
+                "rate": 0.2
+            }
+        }
+    },
+    "3187": {
+        "id": 3187,
+        "category": "阴谋",
+        "event": "你成功除掉了竞争对手，独占宗门资源，修为突飞猛进。",
+        "NoRandom": 1,
+        "grade": 3,
+        "effect": {
+            "CULT": 200,
+            "STONE": 2000,
+            "MOOD": -5
+        }
+    },
+    "3188": {
+        "id": 3188,
+        "category": "阴谋",
+        "event": "对方宁死不屈，你虽然杀了他，但也暴露了心狠手辣的一面，宗门中人人自危。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "MOOD": -20,
+            "CULT": -50
+        }
+    },
+    "3189": {
+        "id": 3189,
+        "category": "阴谋",
+        "event": "你在丹药中动了手脚，让一位长老在关键时刻灵力紊乱，你乘机夺取了他的洞府。",
+        "weight": 3,
+        "grade": 2,
+        "include": "STONE>=1000",
+        "effect": {
+            "STONE": -1000,
+            "CULT": 150,
+            "MOOD": -15
+        }
+    },
+    "3195": {
+        "id": 3195,
+        "category": "阴谋",
+        "event": "你以传道授业为名，哄骗一位外门弟子将其珍贵功法献给你，然后将其逐出师门。",
+        "weight": 3,
+        "grade": 2,
+        "effect": {
+            "CULT": 100,
+            "MOOD": -10
+        }
+    },
+    "3196": {
+        "id": 3196,
+        "category": "阴谋",
+        "event": "你强迫弟子为你试毒，虽然弟子侥幸活下，但深受内伤。",
+        "weight": 3,
+        "grade": 1,
+        "effect": {
+            "MHP": 20,
+            "MOOD": -20
+        }
+    },
+    "3197": {
+        "id": 3197,
+        "category": "阴谋",
+        "event": "你故意传下残缺功法，让一位天赋异禀的弟子走火入魔，从而消除潜在威胁。",
+        "weight": 2,
+        "grade": 0,
+        "effect": {
+            "MOOD": -25,
+            "CULT": 80
+        }
+    },
+    "3198": {
+        "id": 3198,
+        "category": "阴谋",
+        "event": "你将弟子当作傀儡，驱使他为你完成危险任务，弟子九死一生。",
+        "weight": 4,
+        "grade": 1,
+        "effect": {
+            "CULT": 50,
+            "MOOD": -15,
+            "HP": -10
+        }
+    },
+    "3199": {
+        "id": 3199,
+        "category": "阴谋",
+        "event": "你发现弟子私藏珍宝，借机将其没收据为己有。",
+        "weight": 4,
+        "grade": 2,
+        "effect": {
+            "STONE": 800,
+            "MOOD": -8
+        }
+    },
+    "3200": {
+        "id": 3200,
+        "category": "阴谋",
+        "event": "你与外门势力勾结，出卖宗门情报，换取大量灵石。",
+        "weight": 2,
+        "grade": 0,
+        "include": "STONE>=5000",
+        "effect": {
+            "STONE": 5000,
+            "CULT": 100,
+            "MOOD": -30
+        }
+    },
+    "3205": {
+        "id": 3205,
+        "category": "阴谋",
+        "event": "你觊觎一位闭关长老的洞府，在他出关时偷袭，企图夺取其毕生收藏。",
+        "weight": 2,
+        "grade": 3,
+        "battle": {
+            "name": "闭关长老",
+            "hp": 2000,
+            "atk": 50,
+            "elem": "JIN",
+            "human": true,
+            "res": {
+                "JIN": 12
+            },
+            "win": 3206,
+            "lose": 3207,
+            "pillDrop": {
+                "pill": "PILL4",
+                "rate": 0.3
+            }
+        }
+    },
+    "3206": {
+        "id": 3206,
+        "category": "阴谋",
+        "event": "你成功击杀长老，获得了他一生的珍藏，包括一瓶元婴丹和大量灵石。",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "STONE": 3000,
+            "PILL4": 1,
+            "CULT": 200,
+            "MOOD": -20
+        }
+    },
+    "3207": {
+        "id": 3207,
+        "category": "阴谋",
+        "event": "你不敌闭关长老，被废去修为后逃出宗门，沦为丧家之犬。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "CULT": -200,
+            "MOOD": -40,
+            "HP": -100
+        }
+    },
+    "3208": {
+        "id": 3208,
+        "category": "阴谋",
+        "event": "你在一处拍卖会上设局，让一位富商以十倍价钱买下了一件假货。",
+        "weight": 3,
+        "grade": 2,
+        "effect": {
+            "STONE": 2000,
+            "MOOD": -10
+        }
+    },
+    "3209": {
+        "id": 3209,
+        "category": "阴谋",
+        "event": "你勾结魔道人士，让他们在宗门活动时制造混乱，你再出来“平定”局势立功。",
+        "weight": 2,
+        "grade": 1,
+        "include": "STONE>=3000",
+        "effect": {
+            "STONE": -3000,
+            "CULT": 150,
+            "MOOD": -25
+        }
+    },
+    "3215": {
+        "id": 3215,
+        "category": "因果",
+        "event": "你往日的恶行被一位高人看在眼里，对方点化你，让你心生悔意。",
+        "weight": 3,
+        "grade": 2,
+        "effect": {
+            "MOOD": 20,
+            "CULT": 50
+        }
+    },
+    "3216": {
+        "id": 3216,
+        "category": "因果",
+        "event": "你的阴谋被一位正直长老察觉，对方虽然没有揭发你，但眼神中满是鄙夷。",
+        "weight": 3,
+        "grade": 1,
+        "effect": {
+            "MOOD": -15,
+            "CULT": -30
+        }
+    },
+    "3217": {
+        "id": 3217,
+        "category": "因果",
+        "event": "你害过的弟子中有人走上歧途，加入了魔道，修仙界中流传着你的“事迹”。",
+        "weight": 2,
+        "grade": 0,
+        "effect": {
+            "MOOD": -30,
+            "CULT": -50
+        }
+    },
+    "3218": {
+        "id": 3218,
+        "category": "因果",
+        "event": "你终于良心发现，决定以后不再作恶，心境得到提升。",
+        "weight": 2,
+        "grade": 3,
+        "effect": {
+            "MOOD": 30,
+            "CULT": 100
+        }
+    },
+    "3219": {
+        "id": 3219,
+        "category": "因果",
+        "event": "你收到了匿名威胁信，似乎有人知道了你的所作所为。",
+        "weight": 4,
+        "grade": 1,
+        "effect": {
+            "MOOD": -20
+        }
+    },
+    "3220": {
+        "id": 3220,
+        "category": "因果",
+        "event": "你设局陷害的对象亲友找上门来，虽然你击退了他们，但也耗费不少资源。",
+        "weight": 3,
+        "grade": 0,
+        "battle": {
+            "name": "复仇者",
+            "hp": 1000,
+            "atk": 40,
+            "elem": "MO",
+            "human": true,
+            "res": {
+                "MO": 10
+            },
+            "win": 3221,
+            "lose": 3222,
+            "pillDrop": {
+                "pill": "PILL4",
+                "rate": 0.2
+            }
+        }
+    },
+    "3221": {
+        "id": 3221,
+        "category": "因果",
+        "event": "你击败了复仇者，但也意识到仇恨的循环不会停止。",
+        "NoRandom": 1,
+        "grade": 2,
+        "effect": {
+            "STR": 3,
+            "MOOD": -15
+        }
+    },
+    "3222": {
+        "id": 3222,
+        "category": "因果",
+        "event": "你不敌复仇者，身受重伤，这可能就是报应吧。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -80,
+            "MOOD": -25,
+            "CULT": -50
+        }
+    },
+    "3230": {
+        "id": 3230,
+        "category": "道侣",
+        "event": "你遇到了一位修为相当的女修，两人相谈甚欢。",
+        "weight": 3,
+        "grade": 2,
+        "effect": {
+            "MOOD": 20,
+            "CULT": 50
+        }
+    },
+    "3231": {
+        "id": 3231,
+        "category": "道侣",
+        "event": "你与那位女修结为道侣，双修之后修为大进。",
+        "weight": 2,
+        "grade": 3,
+        "once": 1,
+        "effect": {
+            "CULT": 150,
+            "MOOD": 25,
+            "MMP": 20
+        }
+    },
+    "3232": {
+        "id": 3232,
+        "category": "道侣",
+        "event": "你的道侣遇到了危险，你奋不顾身前去营救。",
+        "weight": 2,
+        "grade": 2,
+        "battle": {
+            "name": "邪修",
+            "hp": 1200,
+            "atk": 42,
+            "elem": "XUE",
+            "human": true,
+            "res": {
+                "XUE": 10
+            },
+            "win": 3233,
+            "lose": 3234,
+            "pillDrop": {
+                "pill": "PILL4",
+                "rate": 0.2
+            }
+        }
+    },
+    "3233": {
+        "id": 3233,
+        "category": "道侣",
+        "event": "你救出了道侣，两人感情更加深厚。",
+        "NoRandom": 1,
+        "grade": 3,
+        "effect": {
+            "MOOD": 20,
+            "CULT": 60
+        }
+    },
+    "3234": {
+        "id": 3234,
+        "category": "道侣",
+        "event": "你虽然击退了邪修，但道侣还是受了伤。",
+        "NoRandom": 1,
+        "grade": 1,
+        "effect": {
+            "MOOD": -10,
+            "CULT": -30
+        }
+    },
+    "3235": {
+        "id": 3235,
+        "category": "子嗣",
+        "event": "你的道侣为你生下了一名灵根不错的孩子。",
+        "weight": 2,
+        "grade": 3,
+        "once": 1,
+        "effect": {
+            "MOOD": 30,
+            "CULT": 100
+        }
+    },
+    "3236": {
+        "id": 3236,
+        "category": "子嗣",
+        "event": "你悉心教导孩子，虽然耗费时间，但也有所感悟。",
+        "weight": 4,
+        "grade": 2,
+        "effect": {
+            "CULT": 40,
+            "MOOD": 15
+        }
+    },
+    "3237": {
+        "id": 3237,
+        "category": "子嗣",
+        "event": "你的孩子展现出惊人的天赋，你为他安排了最好的资源。",
+        "weight": 2,
+        "grade": 3,
+        "include": "STONE>=2000",
+        "effect": {
+            "STONE": -2000,
+            "MOOD": 20,
+            "CULT": 80
+        }
+    },
+    "3238": {
+        "id": 3238,
+        "category": "子嗣",
+        "event": "你的孩子被正道前辈看中，收为关门弟子。",
+        "weight": 1,
+        "grade": 4,
+        "once": 1,
+        "effect": {
+            "MOOD": 25,
+            "STONE": 500
+        }
+    },
+    "3250": {
+        "id": 3250,
+        "category": "荣耀",
+        "event": "你在正道大比中力压群雄，名震修仙界。",
+        "weight": 3,
+        "grade": 4,
+        "battle": {
+            "name": "正道魁首",
+            "hp": 2000,
+            "atk": 50,
+            "elem": "JIN",
+            "human": true,
+            "res": {
+                "JIN": 12
+            },
+            "win": 3251,
+            "lose": 3252,
+            "pillDrop": {
+                "pill": "PILL4",
+                "rate": 0.3
+            }
+        }
+    },
+    "3251": {
+        "id": 3251,
+        "category": "荣耀",
+        "event": "你成为正道魁首，各大门派纷纷来贺。",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "CULT": 250,
+            "STONE": 1000,
+            "MOOD": 30
+        }
+    },
+    "3252": {
+        "id": 3252,
+        "category": "荣耀",
+        "event": "虽然你败了，但你的表现赢得了所有人的尊重。",
+        "NoRandom": 1,
+        "grade": 2,
+        "effect": {
+            "CULT": 80,
+            "MOOD": 15
+        }
+    },
+    "3253": {
+        "id": 3253,
+        "category": "荣耀",
+        "event": "你受正道盟委托，督办一件重要事务。",
+        "weight": 3,
+        "grade": 3,
+        "effect": {
+            "CULT": 100,
+            "STONE": 500,
+            "MOOD": 10
+        }
+    },
+    "3254": {
+        "id": 3254,
+        "category": "荣耀",
+        "event": "你被授予正道护法之职，地位尊崇。",
+        "weight": 2,
+        "grade": 4,
+        "once": 1,
+        "effect": {
+            "CULT": 200,
+            "MOOD": 20,
+            "STONE": 800
+        }
+    },
+    "3255": {
+        "id": 3255,
+        "category": "荣耀",
+        "event": "你的事迹被修仙界传颂，人人敬仰。",
+        "weight": 2,
+        "grade": 3,
+        "effect": {
+            "CULT": 100,
+            "MOOD": 20
+        }
+    },
+    "3256": {
+        "id": 3256,
+        "category": "荣耀",
+        "event": "一位前辈主动找你结交，你们成为了忘年交。",
+        "weight": 2,
+        "grade": 3,
+        "effect": {
+            "CULT": 120,
+            "MOOD": 15
+        }
+    },
+    "3270": {
+        "id": 3270,
+        "category": "传承",
+        "event": "你开始著书立说，将自己的修炼心得记录下来。",
+        "weight": 4,
+        "grade": 2,
+        "effect": {
+            "CULT": 80,
+            "MOOD": 10
+        }
+    },
+    "3271": {
+        "id": 3271,
+        "category": "传承",
+        "event": "你收了一位关门弟子，倾囊相授。",
+        "weight": 2,
+        "grade": 3,
+        "once": 1,
+        "effect": {
+            "CULT": 150,
+            "MOOD": 20
+        }
+    },
+    "3272": {
+        "id": 3272,
+        "category": "传承",
+        "event": "你的弟子学有所成，在宗门中崭露头角。",
+        "weight": 3,
+        "grade": 2,
+        "include": "STAGE>=8",
+        "effect": {
+            "CULT": 60,
+            "MOOD": 15
+        }
+    },
+    "3273": {
+        "id": 3273,
+        "category": "传承",
+        "event": "你建立了自己的家族，开始为家族未来规划。",
+        "weight": 2,
+        "grade": 3,
+        "once": 1,
+        "include": "STONE>=3000",
+        "effect": {
+            "STONE": -3000,
+            "CULT": 120,
+            "MOOD": 15
+        }
+    },
+    "3274": {
+        "id": 3274,
+        "category": "传承",
+        "event": "你将一门珍贵功法传授给了家族后人。",
+        "weight": 2,
+        "grade": 3,
+        "effect": {
+            "CULT": 100,
+            "MOOD": 10
+        }
+    },
+    "3275": {
+        "id": 3275,
+        "category": "传承",
+        "event": "你的家族被正道认可，地位稳固。",
+        "weight": 2,
+        "grade": 4,
+        "include": "STAGE>=9",
+        "effect": {
+            "CULT": 150,
+            "MOOD": 20,
+            "STONE": 500
+        }
+    },
+    "3290": {
+        "id": 3290,
+        "category": "经济",
+        "event": "你购入了一座灵矿，每年收益惊人。",
+        "weight": 2,
+        "grade": 3,
+        "include": "STONE>=8000",
+        "effect": {
+            "STONE": 15000
+        }
+    },
+    "3291": {
+        "id": 3291,
+        "category": "经济",
+        "event": "你在拍卖会上拍下了一件上古法器。",
+        "weight": 2,
+        "grade": 4,
+        "include": "STONE>=15000",
+        "effect": {
+            "STONE": -15000,
+            "STR": 10,
+            "JIN": 5,
+            "MOOD": 15
+        }
+    },
+    "3292": {
+        "id": 3292,
+        "category": "经济",
+        "event": "你投资了一门新兴生意，获利丰厚。",
+        "weight": 3,
+        "grade": 3,
+        "include": "STONE>=5000",
+        "effect": {
+            "STONE": 12000
+        }
+    },
+    "3293": {
+        "id": 3293,
+        "category": "经济",
+        "event": "你买下了一件洞府，并布置了聚灵阵法。",
+        "weight": 2,
+        "grade": 3,
+        "include": "STONE>=6000",
+        "effect": {
+            "STONE": -6000,
+            "CULT": 200,
+            "MOOD": 15
+        }
+    },
+    "3294": {
+        "id": 3294,
+        "category": "经济",
+        "event": "你收到了一件价值连城的法宝作为礼物。",
+        "weight": 1,
+        "grade": 4,
+        "include": "STAGE>=9",
+        "effect": {
+            "STR": 8,
+            "MHP": 50
+        }
+    },
+    "3310": {
+        "id": 3310,
+        "category": "挑战",
+        "event": "你接受了正道盟的委托，前往镇压一头作乱的妖兽。",
+        "weight": 3,
+        "grade": 3,
+        "battle": {
+            "name": "金丹期妖兽",
+            "hp": 2800,
+            "atk": 58,
+            "elem": "MO",
+            "win": 3311,
+            "lose": 3312,
+            "pillDrop": {
+                "pill": "PILL4",
+                "rate": 0.25
+            }
+        }
+    },
+    "3311": {
+        "id": 3311,
+        "category": "挑战",
+        "event": "你成功斩杀妖兽，获得了其内丹。",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "CULT": 200,
+            "STR": 6,
+            "STONE": 800
+        }
+    },
+    "3312": {
+        "id": 3312,
+        "category": "挑战",
+        "event": "你虽然击退了妖兽，但也受了内伤。",
+        "NoRandom": 1,
+        "grade": 0,
+        "effect": {
+            "HP": -80,
+            "CULT": -50,
+            "MOOD": -10
+        }
+    },
+    "3313": {
+        "id": 3313,
+        "category": "挑战",
+        "event": "你决定挑战一位元婴期散修，验证自己的实力。",
+        "weight": 2,
+        "grade": 4,
+        "battle": {
+            "name": "元婴初期散修",
+            "hp": 3500,
+            "atk": 68,
+            "elem": "SHUI",
+            "human": true,
+            "res": {
+                "SHUI": 15
+            },
+            "win": 3314,
+            "lose": 3315,
+            "pillDrop": {
+                "pill": "PILL4",
+                "rate": 0.5
+            }
+        }
+    },
+    "3314": {
+        "id": 3314,
+        "category": "挑战",
+        "event": "你越级斩敌，名震天下！",
+        "NoRandom": 1,
+        "grade": 4,
+        "effect": {
+            "CULT": 300,
+            "STR": 10,
+            "MOOD": 30
+        }
+    },
+    "3315": {
+        "id": 3315,
+        "category": "挑战",
+        "event": "你不敌元婴高手，但这场战斗让你受益匪浅。",
+        "NoRandom": 1,
+        "grade": 1,
+        "effect": {
+            "CULT": 100,
+            "HP": -60,
+            "MOOD": -5
+        }
+    }
+}

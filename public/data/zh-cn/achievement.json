@@ -1,0 +1,12 @@
+{
+    "202": { "id": 202, "name": "初窥门径", "opportunity": "TRAJECTORY", "condition": "CULT>=50", "grade": 2 },
+    "203": { "id": 203, "name": "筑基有成", "opportunity": "TRAJECTORY", "condition": "REALM>=2", "grade": 3 },
+    "204": { "id": 204, "name": "小富一方", "opportunity": "TRAJECTORY", "condition": "STONE>=200", "grade": 3 },
+    "205": { "id": 205, "name": "五行大圆满", "opportunity": "SUMMARY", "condition": "JIN>=5 & MU>=5 & SHUI>=5 & HUO>=5 & TU>=5", "grade": 4, "hide": 1 },
+    "206": { "id": 206, "name": "千锤百炼", "opportunity": "TRAJECTORY", "condition": "STR>=15", "grade": 2 },
+    "207": { "id": 207, "name": "命悬一线", "opportunity": "TRAJECTORY", "condition": "HP<=10", "grade": 2, "hide": 1 },
+    "208": { "id": 208, "name": "心如止水", "opportunity": "TRAJECTORY", "condition": "MOOD>=90", "grade": 3 },
+    "209": { "id": 209, "name": "天煞孤星", "opportunity": "TRAJECTORY", "condition": "MOOD<10", "grade": 3, "hide": 1 },
+    "210": { "id": 210, "name": "百岁真人", "opportunity": "TRAJECTORY", "condition": "AGE>=100", "grade": 0 },
+    "201": { "id": 201, "name": "金丹大道", "opportunity": "TRAJECTORY", "condition": "REALM>=3", "grade": 0 }
+}

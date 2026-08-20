@@ -1,0 +1,12 @@
+{
+    "5001": {"id": 5001, "name": "养剑葫", "grade": 4, "cult": 3, "sell": 150, "description": "葫中孕剑气，每年修为+3。"},
+    "5002": {"id": 5002, "name": "聚灵佩", "grade": 3, "cult": 2, "sell": 100, "description": "玉佩聚灵，每年修为+2。"},
+    "5003": {"id": 5003, "name": "静心蒲团", "grade": 1, "cult": 1, "sell": 30, "description": "静坐凝神，每年修为+1。"},
+    "5004": {"id": 5004, "name": "残破的魔像", "grade": 0, "cult": -3, "sell": 10, "description": "魔气侵体，每年修为-3。"},
+    "5005": {"id": 5005, "name": "乾坤钱袋", "grade": 2, "cult": 1, "sell": 30, "description": "财气养人，每年修为+1。"},
+    "5006": {"id": 5006, "name": "紫气丹炉", "grade": 3, "cult": 2, "sell": 100, "description": "丹香凝神，每年修为+2。"},
+    "5007": {"id": 5007, "name": "雷印石", "grade": 3, "cult": 2, "sell": 80, "description": "雷光淬体，每年修为+2。"},
+    "5008": {"id": 5008, "name": "剑穗残片", "grade": 2, "cult": 1, "sell": 20, "description": "前辈遗物，每年修为+1。"},
+    "5009": {"id": 5009, "name": "黑风令", "grade": 4, "cult": 3, "sell": 100, "description": "盗首信物，每年修为+3。"},
+    "5010": {"id": 5010, "name": "金丹长老令", "grade": 4, "cult": 4, "sell": 300, "description": "宗门长老信物，每年修为+4。"}
+}
