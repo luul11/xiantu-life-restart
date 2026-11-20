@@ -1,0 +1,402 @@
+{
+    "1": {
+        "id": 1,
+        "name": "烈火剑法",
+        "elem": "HUO",
+        "mp": 10,
+        "base": 15,
+        "grade": 2,
+        "minRealm": 1,
+        "description": "烈火剑气，焚金裂石"
+    },
+    "2": {
+        "id": 2,
+        "name": "庚金剑气",
+        "elem": "JIN",
+        "mp": 15,
+        "base": 20,
+        "grade": 3,
+        "minRealm": 1,
+        "description": "庚金锋锐，无坚不摧"
+    },
+    "3": {
+        "id": 3,
+        "name": "癸水咒",
+        "elem": "SHUI",
+        "mp": 12,
+        "base": 18,
+        "grade": 2,
+        "minRealm": 2,
+        "description": "癸水阴柔，蚀骨销魂"
+    },
+    "4": {
+        "id": 4,
+        "name": "裂地斩",
+        "elem": "TU",
+        "mp": 18,
+        "base": 25,
+        "grade": 3,
+        "minRealm": 2,
+        "description": "一斩裂地，山崩石碎"
+    },
+    "5": {
+        "id": 5,
+        "name": "万木朝宗",
+        "elem": "MU",
+        "mp": 25,
+        "base": 35,
+        "grade": 4,
+        "minRealm": 2,
+        "description": "万木听令，生生不息"
+    },
+    "6": {
+        "id": 6,
+        "name": "无名剑诀",
+        "elem": "NONE",
+        "mp": 30,
+        "base": 60,
+        "grade": 4,
+        "minRealm": 2,
+        "description": "无招无式，唯快不破"
+    },
+    "7": {
+        "id": 7,
+        "name": "紫霄雷诀",
+        "elem": "JIN",
+        "mp": 35,
+        "base": 75,
+        "grade": 4,
+        "minRealm": 3,
+        "description": "紫霄雷动，金丹真火化雷霆"
+    },
+    "8": {
+        "id": 8,
+        "name": "青冥长生诀",
+        "elem": "MU",
+        "mp": 30,
+        "base": 62,
+        "grade": 3,
+        "minRealm": 3,
+        "description": "青木长生，真元绵延不绝"
+    },
+    "9": {
+        "id": 9,
+        "name": "引气诀",
+        "elem": "NONE",
+        "mp": 5,
+        "base": 8,
+        "grade": 1,
+        "minRealm": 1,
+        "description": "引天地灵气入体，拙朴却扎实"
+    },
+    "10": {
+        "id": 10,
+        "name": "青木刺",
+        "elem": "MU",
+        "mp": 6,
+        "base": 10,
+        "grade": 1,
+        "minRealm": 1,
+        "description": "凝木为刺，见血封喉"
+    },
+    "11": {
+        "id": 11,
+        "name": "落石击",
+        "elem": "TU",
+        "mp": 8,
+        "base": 12,
+        "grade": 1,
+        "minRealm": 1,
+        "description": "唤山石坠下，重拙有力"
+    },
+    "12": {
+        "id": 12,
+        "name": "水箭术",
+        "elem": "SHUI",
+        "mp": 9,
+        "base": 14,
+        "grade": 2,
+        "minRealm": 1,
+        "description": "水化成箭，无孔不入"
+    },
+    "13": {
+        "id": 13,
+        "name": "焚叶掌",
+        "elem": "HUO",
+        "mp": 10,
+        "base": 16,
+        "grade": 2,
+        "minRealm": 1,
+        "description": "掌心吐火，焚尽枯叶"
+    },
+    "14": {
+        "id": 14,
+        "name": "金锋指",
+        "elem": "JIN",
+        "mp": 12,
+        "base": 18,
+        "grade": 2,
+        "minRealm": 1,
+        "description": "指如金锋，点石成穿"
+    },
+    "15": {
+        "id": 15,
+        "name": "玄冰刺",
+        "elem": "SHUI",
+        "mp": 16,
+        "base": 30,
+        "grade": 3,
+        "minRealm": 2,
+        "description": "寒气凝刺，触之成冰"
+    },
+    "16": {
+        "id": 16,
+        "name": "赤炎掌",
+        "elem": "HUO",
+        "mp": 18,
+        "base": 33,
+        "grade": 3,
+        "minRealm": 2,
+        "description": "一掌赤炎，灼骨焚身"
+    },
+    "17": {
+        "id": 17,
+        "name": "厚土盾击",
+        "elem": "TU",
+        "mp": 15,
+        "base": 28,
+        "grade": 3,
+        "minRealm": 2,
+        "description": "以土为盾，撞之如山"
+    },
+    "18": {
+        "id": 18,
+        "name": "青莲剑歌",
+        "elem": "MU",
+        "mp": 22,
+        "base": 38,
+        "grade": 3,
+        "minRealm": 2,
+        "description": "莲开九品，剑随花落"
+    },
+    "19": {
+        "id": 19,
+        "name": "庚金裂空",
+        "elem": "JIN",
+        "mp": 24,
+        "base": 42,
+        "grade": 4,
+        "minRealm": 2,
+        "description": "庚金锐气，可裂长空"
+    },
+    "20": {
+        "id": 20,
+        "name": "幽冥鬼爪",
+        "elem": "NONE",
+        "mp": 20,
+        "base": 45,
+        "grade": 3,
+        "minRealm": 2,
+        "description": "阴气化爪，摄魂夺魄"
+    },
+    "21": {
+        "id": 21,
+        "name": "两仪剑阵",
+        "elem": "NONE",
+        "mp": 28,
+        "base": 52,
+        "grade": 4,
+        "minRealm": 2,
+        "description": "阴阳相济，剑阵自成"
+    },
+    "22": {
+        "id": 22,
+        "name": "焚天业火",
+        "elem": "HUO",
+        "mp": 26,
+        "base": 48,
+        "grade": 4,
+        "minRealm": 2,
+        "description": "业火焚天，罪孽难逃"
+    },
+    "23": {
+        "id": 23,
+        "name": "玄冥真水",
+        "elem": "SHUI",
+        "mp": 24,
+        "base": 44,
+        "grade": 4,
+        "minRealm": 2,
+        "description": "玄冥之水，蚀魂销骨"
+    },
+    "24": {
+        "id": 24,
+        "name": "磐石不动",
+        "elem": "TU",
+        "mp": 20,
+        "base": 40,
+        "grade": 3,
+        "minRealm": 2,
+        "description": "心如磐石，万法不侵"
+    },
+    "25": {
+        "id": 25,
+        "name": "万剑归宗",
+        "elem": "JIN",
+        "mp": 30,
+        "base": 56,
+        "grade": 4,
+        "minRealm": 2,
+        "description": "万剑齐鸣，归于一处"
+    },
+    "26": {
+        "id": 26,
+        "name": "春风化雨",
+        "elem": "MU",
+        "mp": 25,
+        "base": 42,
+        "grade": 3,
+        "minRealm": 2,
+        "description": "化雨无声，生机暗涌"
+    },
+    "27": {
+        "id": 27,
+        "name": "九霄惊雷",
+        "elem": "JIN",
+        "mp": 42,
+        "base": 95,
+        "grade": 4,
+        "minRealm": 3,
+        "description": "雷动九霄，涤荡群邪"
+    },
+    "28": {
+        "id": 28,
+        "name": "焚天煮海",
+        "elem": "HUO",
+        "mp": 45,
+        "base": 100,
+        "grade": 4,
+        "minRealm": 3,
+        "description": "真火倾世，煮海焚天"
+    },
+    "29": {
+        "id": 29,
+        "name": "玄天冰封",
+        "elem": "SHUI",
+        "mp": 40,
+        "base": 88,
+        "grade": 4,
+        "minRealm": 3,
+        "description": "一念冰封，天地失声"
+    },
+    "30": {
+        "id": 30,
+        "name": "万壑归墟",
+        "elem": "TU",
+        "mp": 38,
+        "base": 82,
+        "grade": 4,
+        "minRealm": 3,
+        "description": "厚土归墟，万物沉埋"
+    },
+    "31": {
+        "id": 31,
+        "name": "长春真人诀",
+        "elem": "MU",
+        "mp": 35,
+        "base": 78,
+        "grade": 4,
+        "minRealm": 3,
+        "description": "长春不老，生生不息"
+    },
+    "32": {
+        "id": 32,
+        "name": "太虚剑典",
+        "elem": "NONE",
+        "mp": 48,
+        "base": 110,
+        "grade": 4,
+        "minRealm": 3,
+        "description": "太虚一剑，无迹可寻"
+    },
+    "33": {
+        "id": 33,
+        "name": "五雷正法",
+        "elem": "JIN",
+        "mp": 36,
+        "base": 85,
+        "grade": 3,
+        "minRealm": 3,
+        "description": "五雷正法，诛邪破妄"
+    },
+    "34": {
+        "id": 34,
+        "name": "紫府元磁",
+        "elem": "TU",
+        "mp": 40,
+        "base": 92,
+        "grade": 4,
+        "minRealm": 3,
+        "description": "紫府元磁，摄物夺兵"
+    },
+    "35": {
+        "id": 35,
+        "name": "青莲剑意",
+        "elem": "MU",
+        "mp": 34,
+        "base": 80,
+        "grade": 4,
+        "minRealm": 3,
+        "description": "青莲剑意，意到剑至"
+    },
+    "36": {
+        "id": 36,
+        "name": "化血神光",
+        "elem": "NONE",
+        "mp": 30,
+        "base": 90,
+        "grade": 3,
+        "minRealm": 3,
+        "description": "血光化虹，以杀止杀"
+    },
+    "37": {
+        "id": 37,
+        "name": "玄阴噬魂",
+        "elem": "SHUI",
+        "mp": 44,
+        "base": 96,
+        "grade": 4,
+        "minRealm": 3,
+        "description": "玄阴噬魂，魂飞魄散"
+    },
+    "38": {
+        "id": 38,
+        "name": "太阳真火",
+        "elem": "HUO",
+        "mp": 50,
+        "base": 108,
+        "grade": 4,
+        "minRealm": 3,
+        "description": "太阳真火，焚尽诸天"
+    },
+    "39": {
+        "id": 39,
+        "name": "乾坤一指",
+        "elem": "NONE",
+        "mp": 55,
+        "base": 130,
+        "grade": 4,
+        "minRealm": 3,
+        "description": "一指乾坤，定人生死"
+    },
+    "40": {
+        "id": 40,
+        "name": "混元道果",
+        "elem": "NONE",
+        "mp": 60,
+        "base": 140,
+        "grade": 4,
+        "minRealm": 3,
+        "description": "混元道果，一念成真"
+    }
+}

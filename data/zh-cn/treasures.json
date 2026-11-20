@@ -1,0 +1,22 @@
+{
+    "5001": {"id":5001,"name":"养剑葫","grade":4,"cult":3,"sell":150,"description":"葫中孕剑气，每年修为+3。"},
+    "5002": {"id":5002,"name":"聚灵佩","grade":3,"cult":2,"sell":100,"description":"玉佩聚灵，每年修为+2。"},
+    "5003": {"id":5003,"name":"静心蒲团","grade":1,"cult":1,"sell":30,"description":"静坐凝神，每年修为+1。"},
+    "5004": {"id":5004,"name":"镇魔石像","grade":2,"cult":1,"sell":60,"description":"石像虽残，魔气已被镇住，反成护道之物，每年修为+1。"},
+    "5005": {"id":5005,"name":"乾坤钱袋","grade":2,"cult":1,"sell":30,"description":"财气养人，每年修为+1。"},
+    "5006": {"id":5006,"name":"紫气丹炉","grade":3,"cult":2,"sell":100,"description":"丹香凝神，每年修为+2。"},
+    "5007": {"id":5007,"name":"雷印石","grade":3,"cult":2,"sell":80,"description":"雷光淬体，每年修为+2。"},
+    "5008": {"id":5008,"name":"剑穗残片","grade":2,"cult":1,"sell":20,"description":"前辈遗物，每年修为+1。"},
+    "5009": {"id":5009,"name":"黑风令","grade":4,"cult":3,"sell":100,"description":"盗首信物，每年修为+3。"},
+    "5010": {"id":5010,"name":"金丹长老令","grade":4,"cult":4,"sell":300,"description":"宗门长老信物，每年修为+4。"},
+    "5011": {"id":5011,"name":"粗布蒲团","grade":1,"cult":1,"sell":15,"description":"粗麻所制，坐久了倒也静心。"},
+    "5012": {"id":5012,"name":"照心铜镜","grade":2,"cult":2,"sell":65,"description":"镜面斑驳，却能照见本心，每年修为+2。"},
+    "5013": {"id":5013,"name":"桃木剑","grade":2,"cult":1,"sell":40,"description":"百年桃木所制，邪祟近身自鸣。"},
+    "5014": {"id":5014,"name":"八卦罗盘","grade":2,"cult":2,"sell":70,"description":"指针自转，可辨灵脉走向。"},
+    "5015": {"id":5015,"name":"悟道茶具","grade":3,"cult":3,"sell":130,"description":"一盏入喉，尘念俱消，每年修为+3。"},
+    "5016": {"id":5016,"name":"玄天宝鉴","grade":4,"cult":4,"sell":280,"description":"镜中映照本心，照见即破执。"},
+    "5017": {"id":5017,"name":"太虚剑匣","grade":4,"cult":5,"sell":500,"description":"匣中无剑，剑意长鸣，每年修为+5。"},
+    "5018": {"id":5018,"name":"血魔珠","grade":4,"cult":4,"sell":200,"description":"血光内蕴，修炼一日千里，然心神难安。"},
+    "5019": {"id":5019,"name":"蕴灵玉镯","grade":3,"cult":3,"sell":120,"description":"玉镯温润，日夜替你聚敛灵气，每年修为+3。"},
+    "5020": {"id":5020,"name":"定神珠","grade":3,"cult":2,"sell":90,"description":"垂于眉心，心魔难侵。"}
+}

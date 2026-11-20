@@ -1,0 +1,220 @@
+{
+    "201": {
+        "id": 201,
+        "name": "金丹大道",
+        "opportunity": "TRAJECTORY",
+        "condition": "REALM>=3",
+        "grade": 0
+    },
+    "202": {
+        "id": 202,
+        "name": "初窥门径",
+        "opportunity": "TRAJECTORY",
+        "condition": "CULT>=50",
+        "grade": 2
+    },
+    "203": {
+        "id": 203,
+        "name": "筑基有成",
+        "opportunity": "TRAJECTORY",
+        "condition": "REALM>=2",
+        "grade": 3
+    },
+    "204": {
+        "id": 204,
+        "name": "小富一方",
+        "opportunity": "TRAJECTORY",
+        "condition": "STONE>=200",
+        "grade": 3
+    },
+    "205": {
+        "id": 205,
+        "name": "五行大圆满",
+        "opportunity": "SUMMARY",
+        "condition": "JIN>=5 & MU>=5 & SHUI>=5 & HUO>=5 & TU>=5",
+        "grade": 4,
+        "hide": 1
+    },
+    "206": {
+        "id": 206,
+        "name": "千锤百炼",
+        "opportunity": "TRAJECTORY",
+        "condition": "STR>=15",
+        "grade": 2
+    },
+    "207": {
+        "id": 207,
+        "name": "命悬一线",
+        "opportunity": "TRAJECTORY",
+        "condition": "HP<=10",
+        "grade": 2,
+        "hide": 1
+    },
+    "208": {
+        "id": 208,
+        "name": "心如止水",
+        "opportunity": "TRAJECTORY",
+        "condition": "MOOD>=90",
+        "grade": 3
+    },
+    "209": {
+        "id": 209,
+        "name": "天煞孤星",
+        "opportunity": "TRAJECTORY",
+        "condition": "MOOD<10",
+        "grade": 3,
+        "hide": 1
+    },
+    "210": {
+        "id": 210,
+        "name": "百岁真人",
+        "opportunity": "TRAJECTORY",
+        "condition": "AGE>=100",
+        "grade": 0
+    },
+    "231": {
+        "id": 231,
+        "name": "年过半百",
+        "opportunity": "TRAJECTORY",
+        "condition": "AGE>=50",
+        "grade": 1
+    },
+    "232": {
+        "id": 232,
+        "name": "古稀之年",
+        "opportunity": "TRAJECTORY",
+        "condition": "AGE>=70",
+        "grade": 2
+    },
+    "233": {
+        "id": 233,
+        "name": "白首问道",
+        "opportunity": "TRAJECTORY",
+        "condition": "AGE>=150",
+        "grade": 3
+    },
+    "234": {
+        "id": 234,
+        "name": "寿元绵长",
+        "opportunity": "TRAJECTORY",
+        "condition": "LSP>=300",
+        "grade": 4
+    },
+    "235": {
+        "id": 235,
+        "name": "跻身内门",
+        "opportunity": "TRAJECTORY",
+        "condition": "POST>=2",
+        "grade": 2
+    },
+    "236": {
+        "id": 236,
+        "name": "亲传弟子",
+        "opportunity": "TRAJECTORY",
+        "condition": "POST>=3",
+        "grade": 3
+    },
+    "237": {
+        "id": 237,
+        "name": "宗门长老",
+        "opportunity": "TRAJECTORY",
+        "condition": "POST>=4",
+        "grade": 4,
+        "hide": 1
+    },
+    "238": {
+        "id": 238,
+        "name": "金丹十重",
+        "opportunity": "TRAJECTORY",
+        "condition": "REALM>=3 & STAGE>=10",
+        "grade": 4
+    },
+    "239": {
+        "id": 239,
+        "name": "元婴大道",
+        "opportunity": "SUMMARY",
+        "condition": "REALM>=4",
+        "grade": 4
+    },
+    "240": {
+        "id": 240,
+        "name": "富甲一方",
+        "opportunity": "TRAJECTORY",
+        "condition": "STONE>=1000",
+        "grade": 3
+    },
+    "241": {
+        "id": 241,
+        "name": "富可敌国",
+        "opportunity": "TRAJECTORY",
+        "condition": "STONE>=5000",
+        "grade": 4,
+        "hide": 1
+    },
+    "242": {
+        "id": 242,
+        "name": "两袖清风",
+        "opportunity": "TRAJECTORY",
+        "condition": "STONE<=0 & AGE>=40",
+        "grade": 1,
+        "hide": 1
+    },
+    "243": {
+        "id": 243,
+        "name": "铁皮之躯",
+        "opportunity": "START",
+        "condition": "MHP>=250",
+        "grade": 2
+    },
+    "244": {
+        "id": 244,
+        "name": "力能扛鼎",
+        "opportunity": "TRAJECTORY",
+        "condition": "STR>=50",
+        "grade": 4
+    },
+    "245": {
+        "id": 245,
+        "name": "道心圆满",
+        "opportunity": "TRAJECTORY",
+        "condition": "MOOD>=99",
+        "grade": 4
+    },
+    "246": {
+        "id": 246,
+        "name": "心灰意冷",
+        "opportunity": "TRAJECTORY",
+        "condition": "MOOD<=5",
+        "grade": 2,
+        "hide": 1
+    },
+    "247": {
+        "id": 247,
+        "name": "身死道消",
+        "opportunity": "DEATH",
+        "condition": "HP<=0",
+        "grade": 1
+    },
+    "248": {
+        "id": 248,
+        "name": "寿终正寝",
+        "opportunity": "DEATH",
+        "condition": "AGE>=LSP",
+        "grade": 2
+    },
+    "249": {
+        "id": 249,
+        "name": "秘境初探",
+        "opportunity": "TRAJECTORY",
+        "condition": "AGE>=9999",
+        "grade": 3
+    },
+    "250": {
+        "id": 250,
+        "name": "五行归元",
+        "opportunity": "TRAJECTORY",
+        "condition": "JIN>=10 & MU>=10 & SHUI>=10 & HUO>=10 & TU>=10",
+        "grade": 4,
+        "hide": 1
+    }
+}
